@@ -101,7 +101,7 @@ const Section4 = () => {
         </div>
 
         {/* ===== STEP 3 (CENTER – ANCHORED) ===== */}
-        <div className="absolute top-[485px] left-1/2 -translate-x-1/2 w-[360px] flex flex-col items-center ">
+        <div className="absolute top-[470px] left-1/2 -translate-x-1/2 w-[360px] flex flex-col items-center ">
           {/* TEXT */}
           <div className="text-center w-[220px] ">
             <span className="inline-block bg-[#5b3fa3] text-white text-lg px-3 py-1 mb-2 rounded-lg">
@@ -118,7 +118,18 @@ const Section4 = () => {
           </div>
 
           {/* IMAGE */}
-          <img src={manageFundsSvg} alt="Manage funds" />
+          {/* IMAGE — MASK LINE ONLY HERE */}
+          <div className="relative mt-4">
+            {/* LINE CUTTER (only image area) */}
+            <div className="absolute inset-5 bg-white z-0" aria-hidden />
+
+            {/* IMAGE */}
+            <img
+              src={manageFundsSvg}
+              alt="Manage funds"
+              className="relative z-10"
+            />
+          </div>
         </div>
 
         {/* ===== STEP 4 ===== */}
@@ -141,17 +152,35 @@ const Section4 = () => {
         </div>
 
         {/* ===== STEP 5 ===== */}
-        <div className="absolute top-[800px] right-[80px] w-[340px] text-right">
-          <span className="inline-block bg-[#5b3fa3] text-white text-xs px-3 py-1 rounded-full mb-2">
-            Step 5
-          </span>
-          <h4 className="font-poppins-semibold text-lg mb-1">
-            Withdraw Anytime
-          </h4>
-          <p className="text-sm text-gray-500 mb-4">
-            Withdraw your profits or capital anytime with ease.
-          </p>
-          <img src={withdrawSvg} alt="Withdraw" className="ml-auto" />
+        <div className="absolute top-[860px] right-[80px] w-[340px] text-right">
+          <div>
+            <span className="inline-block bg-[#5b3fa3] text-white text-lg px-3 py-1 rounded-lg mb-2">
+              Step 5
+            </span>
+            <h4 className="font-poppins-semibold text-lg mb-1">
+              Withdraw Anytime (T&C apply)
+            </h4>
+            <p className="text-sm text-gray-500">
+              Withdraw your profits or capital
+            </p>
+            <p className="text-sm text-gray-500 mb-4">anytime with ease.</p>
+          </div>
+          {/* <img src={withdrawSvg} alt="Withdraw" className="ml-auto" /> */}
+          <div className="relative w-[320px] ml-20">
+            <img src={withdrawSvg} alt="Signup" className="w-full rounded-xl" />
+
+            {/* TOP FADE */}
+            <div
+              className="pointer-events-none absolute top-0 left-0 w-full h-[80px]
+                  bg-gradient-to-b from-white/90 to-transparent"
+            />
+
+            {/* BOTTOM FADE */}
+            <div
+              className="pointer-events-none absolute bottom-0 left-0 w-full h-[140px]
+                  bg-gradient-to-t from-white/80 to-transparent"
+            />
+          </div>
         </div>
       </div>
     </section>
