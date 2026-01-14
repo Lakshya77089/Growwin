@@ -1,5 +1,9 @@
 import Navbar from "./components/Navbar";
 import Section1 from "./components/Home/Section1";
+import Section2 from "./components/Home/Section2";
+import Section3 from "./components/Home/Section3";
+import PlansSection from "./components/cards/PlansSection";
+import Section4 from "./components/Home/Section4";
 
 function App() {
   return (
@@ -7,6 +11,10 @@ function App() {
       <Navbar />
       {/* <main className="h-[200vh] bg-gray-50"> */}
         <Section1/>
+        <Section2/>
+        <Section3/>
+        <PlansSection/>
+        <Section4/>
       {/* </main> */}
     </>
   );
