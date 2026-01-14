@@ -8,6 +8,7 @@ import Section5 from "./components/Home/Section5";
 import Section6 from "./components/Home/Section6";
 import Section7 from "./components/Home/Section7";
 import ContactUs from "./components/common/ContactUs";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Section6/>
         <Section7/>
         <ContactUs/>
+        <Footer/>
       {/* </main> */}
     </>
   );
