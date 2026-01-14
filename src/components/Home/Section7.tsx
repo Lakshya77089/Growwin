@@ -31,7 +31,7 @@ const Section7 = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="w-full py-32 bg-white overflow-hidden">
+    <section className="w-full py-15 bg-white overflow-hidden">
       <div className="w-full mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">

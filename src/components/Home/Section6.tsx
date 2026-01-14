@@ -2,7 +2,7 @@ import teamImg from "/team.svg"; // use your actual image path
 
 const Section6 = () => {
   return (
-    <section className="w-full py-32 bg-white">
+    <section className="w-full py-15 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
