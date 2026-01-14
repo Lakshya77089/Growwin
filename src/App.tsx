@@ -6,6 +6,7 @@ import PlansSection from "./components/cards/PlansSection";
 import Section4 from "./components/Home/Section4";
 import Section5 from "./components/Home/Section5";
 import Section6 from "./components/Home/Section6";
+import Section7 from "./components/Home/Section7";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Section4/>
         <Section5/>
         <Section6/>
+        <Section7/>
       {/* </main> */}
     </>
   );
