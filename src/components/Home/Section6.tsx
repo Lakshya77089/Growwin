@@ -2,11 +2,11 @@ import teamImg from "/team.svg"; // use your actual image path
 
 const Section6 = () => {
   return (
-    <section className="w-full py-15 bg-white">
+    <section className="w-full py-15 bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-poppins-bold text-[#2D2D2D]">
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             Meet Our <span className="text-[#5b3fa3]">Team</span>
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Section6 = () => {
           </div>
 
           {/* TEXT */}
-          <div className="text-[#3d3d3d] text-[15px] leading-[1.9] max-w-[560px]">
+          <div className="text-[#3d3d3d] font-[var(--font-poppins)]  font-regular text-[15px] leading-[1.9] max-w-[560px]">
             <p className="text-justify">
               At Growwin Capital, our strength lies in a highly experienced and
               passionate team of financial professionals. Our fund managers

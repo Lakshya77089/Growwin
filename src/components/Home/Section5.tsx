@@ -27,11 +27,11 @@ const features = [
 
 const Section5 = () => {
   return (
-    <section className="w-full py-32 bg-white">
+    <section className="w-full py-32 bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-poppins-bold text-[#2D2D2D]">
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             Why Choose <span className="text-[#5b3fa3]">Growwin Capital?</span>
           </h2>
         </div>
@@ -73,7 +73,7 @@ const Section5 = () => {
                 <h4
                   className="
         text-[20px]
-        font-poppins-semibold
+        font-[var(--font-poppins)]  font-semibold
         text-[#2D2D2D]
         mb-4
         transition-colors duration-300
@@ -89,6 +89,7 @@ const Section5 = () => {
         leading-relaxed
         text-gray-600
         max-w-[420px]
+        font-[var(--font-poppins)]  font-regular
         mx-auto
         transition-colors duration-300
         group-hover:text-white/90

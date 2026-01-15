@@ -2,7 +2,7 @@ import heroBg from "/image.svg";
 
 const Section1: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-white">
+    <section className="relative w-full min-h-screen mt-20 overflow-hidden bg-[#F2F2F2]">
       {/* Background Image (IMG behaving like background) */}
       <img
         src={heroBg}
@@ -21,15 +21,15 @@ const Section1: React.FC = () => {
       {/* Content Wrapper */}
       <div className="relative z-10 min-h-screen flex items-center justify-center">
         <div className="text-center px-6">
-          <h1 className="text-4xl md:text-7xl font-jost-semibold text-white-offset tracking-wide ">
+          <h1 className="text-4xl md:text-7xl font-[var(--font-jost)]  font-semibold text-white-offset tracking-wide ">
             GROWWIN CAPITAL
           </h1>
 
-          <p className="mt-1 text-lg md:text-2xl font-jost-regular text-[#5E4B8B]">
+          <p className="mt-1 text-lg md:text-2xl font-[var(--font-jost)]  font-regular text-[#5E4B8B]">
             Smart Investing for a Smarter Future
           </p>
 
-          <div className="mt-6 flex items-center justify-center gap-4 text-sm md:text-lg text-[#6A5C9C]">
+          <div className="mt-6 flex items-center font-[var(--font-jost)]  font-regular justify-center gap-4 text-sm md:text-lg text-[#6A5C9C]">
             <span className="font-jost-regular" >Simple</span>
             <span>|</span>
             <span className="font-jost-regular">Stable Returns</span>
@@ -44,7 +44,7 @@ const Section1: React.FC = () => {
               rounded-lg
               bg-[#4B2C82]
               text-white
-              font-poppins-regular
+              font-[var(--font-poppins)]  font-regular
               transition-all
               hover:bg-[#5A3A99]
               border-1

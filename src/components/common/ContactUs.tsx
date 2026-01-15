@@ -1,10 +1,10 @@
 const ContactUs = () => {
   return (
-    <section className="w-full py-15 bg-white">
+    <section className="w-full py-15 bg-[#F2F2F2] ">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-poppins-bold text-[#2D2D2D]">
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             Contact <span className="text-[#5b3fa3]">us</span>
           </h2>
         </div>
@@ -22,6 +22,7 @@ const ContactUs = () => {
                 px-6
                 rounded-full
                 border border-gray-300
+                bg-white
                 outline-none
                 text-sm
                 focus:border-[#5b3fa3]
@@ -39,6 +40,7 @@ const ContactUs = () => {
                 rounded-full
                 border border-gray-300
                 outline-none
+                bg-white
                 text-sm
                 focus:border-[#5b3fa3]
               "

@@ -31,7 +31,7 @@ const Section7 = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="w-full py-15 bg-white overflow-hidden">
+    <section className="w-full py-15 bg-[#F2F2F2] overflow-hidden">
       <div className="w-full mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
@@ -69,7 +69,7 @@ const Section7 = () => {
               </div>
 
               {/* TEXT */}
-              <div className="mt-8 max-w-[520px]">
+              <div className="mt-8 max-w-[520px] font-[var(--font-poppins)]  font-regular">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-[#5b3fa3] font-semibold text-lg">
                     {item.id}

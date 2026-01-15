@@ -24,7 +24,7 @@ const PlanCard = ({ title, price, popular = false }: PlanCardProps) => {
       )}
 
       {/* Title */}
-      <h3 className="text-xl font-poppins-semibold text-[#2D2D2D] mb-4 text-center">
+      <h3 className="text-xlfont-[var(--font-poppins)]  font-semibold text-[#2D2D2D] mb-4 text-center">
         {title}
       </h3>
 
@@ -36,9 +36,9 @@ const PlanCard = ({ title, price, popular = false }: PlanCardProps) => {
         </p>
         <p className="text-xs text-gray-500">USDT</p>
       </div>
-
+      <span className=" text-xs font-[var(--font-poppins)]  font-medium ">Feature</span>
       {/* Features */}
-      <div className="space-y-2 text-sm text-gray-600 font-jost-regular mb-8">
+      <div className="space-y-2 text-sm text-gray-600 mt-2 font-[var(--font-poppins)]  font-regular mb-8">
         <div className="flex justify-between">
           <span>Capital Back</span>
           <span>: Yes</span>

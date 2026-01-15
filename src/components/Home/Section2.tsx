@@ -2,15 +2,15 @@ import officeImg from "/officeimage.svg"; // update path if needed
 
 const Section2 = () => {
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-20 bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl  text-[#2D2D2D]">
+          <h2 className="text-4xl md:text-6xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             Let&apos;s start
           </h2>
-          <h2 className="text-4xl md:text-6xl font-poppins-semibold text-[#2D2D2D]">
+          <h2 className="text-4xl md:text-6xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             with <span className="text-[#5b3fa3]">Growwin Capital</span>
           </h2>
         </div>
@@ -19,7 +19,7 @@ const Section2 = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* Left Text */}
-          <div className="text-gray-600 text-lg leading-relaxed font-jost-regular space-y-4">
+          <div className="text-gray-600 text-lg leading-relaxed font-[var(--font-poppins)]  font-medium space-y-4">
             <p className="font-poppins-semibold text-justify">
               <span className="font-bold">Our company</span> stands at the forefront of the investment industry,
               offering a unique blend of multi-level marketing and forex trading
