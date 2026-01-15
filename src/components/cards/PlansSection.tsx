@@ -20,7 +20,7 @@ const PlansSection = () => {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <PlanCard title="Basic Plan" price="2001" />
-          <PlanCard title="Classic Plan" price="2001" popular />
+          <PlanCard title="Classic Plan" price="2001" popular variant="gradient"/>
           <PlanCard title="Platinum Plan" price="2001" />
         </div>
 

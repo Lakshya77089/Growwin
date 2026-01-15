@@ -48,7 +48,7 @@ const Section5 = () => {
     rounded-[28px]
     px-14 py-12
     text-center
-    bg-white
+    bg-[#f1f1f1]
     border border-white/60
 
     shadow-[0_20px_60px_rgba(0,0,0,0.06)]

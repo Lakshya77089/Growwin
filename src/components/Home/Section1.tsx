@@ -14,7 +14,9 @@ const Section1: React.FC = () => {
           z-0
           object-cover
           pointer-events-none
-          opacity-80
+          brightness-200
+      contrast-90
+ 
         "
       />
 
@@ -30,7 +32,7 @@ const Section1: React.FC = () => {
           </p>
 
           <div className="mt-6 flex items-center font-[var(--font-jost)]  font-regular justify-center gap-4 text-sm md:text-lg text-[#6A5C9C]">
-            <span className="font-jost-regular" >Simple</span>
+            <span className="font-jost-regular">Simple</span>
             <span>|</span>
             <span className="font-jost-regular">Stable Returns</span>
             <span>|</span>

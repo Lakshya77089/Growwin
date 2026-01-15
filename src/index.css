@@ -30,4 +30,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #F2F2F2;
+  overscroll-behavior: none;
+}
+html {
+  scroll-behavior: smooth;
 }
