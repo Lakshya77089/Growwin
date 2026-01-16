@@ -14,7 +14,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <div className="fixed top-0 left-3 right-3 w-full z-50">
+    <div className="fixed top-0 left-3 right-3 w-full z-50 ">
       <div className="flex mx-10 items-center justify-between px-14 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2 text-growwin font-semibold text-[20px]">
