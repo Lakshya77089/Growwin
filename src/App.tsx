@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Subscription from "./pages/Subscription";
 import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/subscription" element={<Subscription />} />
           <Route path="/faq" element={<FAQ/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </main>
     </>

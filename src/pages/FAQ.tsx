@@ -93,7 +93,7 @@ const FAQ = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#5b3fa3] mb-4">
             FAQ
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
+          <p className="text-[#2D2D2D] max-w-2xl mx-auto text-sm md:text-base">
             Frequently partiality possession resolution at or appearance
             unaffected he me. Engaged its was evident pleased husband.
           </p>

@@ -29,7 +29,7 @@ const Subscription = () => {
         {/* Description */}
         <p
           className="
-            text-gray-600
+            text-[#2D2D2D]
             text-sm md:text-base
             leading-relaxed
             font-[var(--font-poppins)]  font-regular
