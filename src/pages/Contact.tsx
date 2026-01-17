@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-6xl font-bold text-[#5b3fa3] mb-6">
+            <h2 className="text-4xl md:text-6xl font-[var(--font-jost)]  font-semibold text-[#5b3fa3] mb-6">
               CONTACT US
             </h2>
             <p className="text-[#2D2D2D] max-w-5xl mx-auto text-sm md:text-base leading-relaxed">

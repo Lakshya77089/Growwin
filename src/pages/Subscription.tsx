@@ -16,7 +16,7 @@ const Subscription = () => {
         <h1
           className="
             text-4xl md:text-6xl
-            font-bold
+            font-[var(--font-jost)]  font-semibold
             tracking-wide
             text-[#5b2d8b]
             font-[var(--font-jost)]  font-semibold
