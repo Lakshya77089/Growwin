@@ -1,6 +1,6 @@
 import appMockup from "/moblie.svg";
-import android from "/android.png";
-import ios from "/ios.png";
+// import android from "/android.png";
+// import ios from "/ios.png";
 
 const TopFeatureCards = () => {
   return (

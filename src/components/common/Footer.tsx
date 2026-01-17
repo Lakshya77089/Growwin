@@ -1,11 +1,11 @@
-import FaMapMarkerAlt from "/footer/FaMapMarkerAlt.svg";
+// import FaMapMarkerAlt from "/footer/FaMapMarkerAlt.svg";
 import FaEnvelope from "/footer/FaEnvelope.svg";
 import FaPhoneAlt from "/footer/FaPhoneAlt.svg";
-import FaLinkedinIn from "/footer/FaLinkedinIn.svg";
+// import FaLinkedinIn from "/footer/FaLinkedinIn.svg";
 import FaTwitter from "/footer/FaTwitter.svg";
 import telegram from "/footer/telegram-32.png";
-import FaFacebookF from "/footer/FaFacebookF.svg";
-import Globe from "/token.svg";
+// import FaFacebookF from "/footer/FaFacebookF.svg";
+// import Globe from "/token.svg";
 const Footer = () => {
   return (
     <footer className="w-full py-20 bg-[#F2F2F2] ">
