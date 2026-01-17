@@ -23,9 +23,10 @@ const TopFeatureCards = () => {
               </h3>
 
               <p className="text-gray-600 font-[var(--font-poppins)]  font-regular text-base leading-relaxed max-w-xl">
-                A secure, intuitive fintech platform designed to simplify
-                financial management, empower smarter decisions, and deliver a
-                seamless experience for users across all financial needs.
+                The Growwin Capital App is a smart and secure platform designed
+                to manage your investments effortlessly. Track your
+                self-investment returns, team income, and rewards in real
+                time—anytime, anywhere, directly from your mobile.
               </p>
 
               {/* <div className="mt-6 text-sm text-gray-500 font-[var(--font-poppins)]  font-regular">
@@ -61,13 +62,13 @@ const TopFeatureCards = () => {
             />
             {/* CONTENT */}
             <h3 className="relative z-10 text-2xl font-[var(--font-poppins)] font-medium text-[#2D2D2D] mb-3">
-              User friendly
+              Secure & Transparent
             </h3>
 
             <p className="relative z-10 text-[#6b6b6b] font-[var(--font-poppins)] text-base leading-relaxed max-w-md">
-              Our user-friendly application offers a clean interface, intuitive
-              navigation, and smooth interactions, making tasks simple,
-              efficient, and enjoyable for users of all experience levels.
+              Your investments are managed through a secure and transparent
+              system. Every transaction, income update, and reward detail is
+              clearly visible, helping you invest with confidence.
             </p>
           </div>
         </div>
@@ -81,24 +82,25 @@ const TopFeatureCards = () => {
 
             {/* CONTENT */}
             <h3 className="relative z-10 text-2xl font-[var(--font-poppins)] font-medium text-[#2D2D2D] mb-4">
-              One Touch/Tap Trading
+              Effortless Actions
             </h3>
 
             <p className="relative z-10 text-gray-600 font-[var(--font-poppins)] text-base leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              auctor leo ac dolor laoreet, quis consectetur metus venenatis.
+              Manage investments, transactions, and support effortlessly with
+              just a few taps—designed to save time and maximize efficiency.
             </p>
           </div>
 
           {/* BOTTOM RIGHT – 70% */}
           <div className="rounded-[36px] border-2 border-[#e2e3e2] p-10 bg-[#e6e6e6] shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
             <h3 className="text-2xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D] mb-4">
-              User friendly
+              Support & Assistance
             </h3>
 
             <p className="text-gray-600 font-[var(--font-poppins)]  font-regular text-base leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              auctor leo ac dolor laoreet, quis consectetur metus venenatis.
+              Raise support tickets, chat with our team, and get timely
+              assistance directly inside the app—ensuring uninterrupted growth
+              and complete peace of mind.
             </p>
           </div>
         </div>

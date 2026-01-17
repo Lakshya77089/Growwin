@@ -79,33 +79,39 @@ const Footer = () => {
                 Contact Info
               </h4> */}
               <ul className="space-y-4 text-sm ">
-                <li className="flex items-center gap-3">
-                  <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
-                    <img src={FaPhoneAlt} alt="Phone" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-[var(--font-poppins)]  font-medium">
-                      Ticket Support
-                    </span>
-                    {/* <span className="font-[var(--font-poppins)]  font-medium">
-                      +91 XXXXXXXXXX
-                    </span> */}
-                  </div>
-                </li>
+                <a
+                  href="https://site.growwincapital.com/help"
+                  className="block"
+                >
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
+                      <img src={FaPhoneAlt} alt="Phone" />
+                    </div>
+
+                    <div className="flex flex-col">
+                      <span className="font-[var(--font-poppins)] font-medium">
+                        Ticket Support
+                      </span>
+                    </div>
+                  </li>
+                </a>
 
                 {/* <li className="flex items-center gap-3"> */}
                 {/* <img src={FaPhoneAlt} alt="Phone" /> */}
 
                 {/* </li> */}
-                <li className="flex items-center gap-3">
-                  <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
-                    <img src={FaEnvelope} alt="Email" />
-                  </div>
+                <a href="mailto:info@growwincapital.com" className="block">
+                  <li className="flex items-center gap-3 cursor-pointer">
+                    <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
+                      <img src={FaEnvelope} alt="Email" />
+                    </div>
 
-                  <span className="font-[var(--font-poppins)]  font-medium">
-                    info@growwincapital.com
-                  </span>
-                </li>
+                    <span className="font-[var(--font-poppins)] font-medium">
+                      info@growwincapital.com
+                    </span>
+                  </li>
+                </a>
+
                 {/* <li className="flex items-center gap-3">
                   <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
                   <img src={FaMapMarkerAlt} alt="Location" />

@@ -63,11 +63,11 @@ const PlanCard = ({
 
         {/* Price */}
         <div className="text-center mb-8">
-          <p className="text-sm text-gray-500 mb-1">Starting from</p>
+          <p className="text-sm text-gray-500 mb-1">Monthly Return</p>
           <p className="text-4xl font-[var(--font-poppins)] font-bold text-[#2D2D2D]">
-            ${price}
+            {price}
           </p>
-          <p className="text-xs text-gray-500 mt-1">USDT</p>
+          {/* <p className="text-xs text-gray-500 mt-1">USDT</p> */}
         </div>
 
         {/* Features */}
