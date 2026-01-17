@@ -3,7 +3,9 @@ import FaEnvelope from "/footer/FaEnvelope.svg";
 import FaPhoneAlt from "/footer/FaPhoneAlt.svg";
 import FaLinkedinIn from "/footer/FaLinkedinIn.svg";
 import FaTwitter from "/footer/FaTwitter.svg";
+import telegram from "/footer/telegram-32.png";
 import FaFacebookF from "/footer/FaFacebookF.svg";
+import Globe from "/token.svg";
 const Footer = () => {
   return (
     <footer className="w-full py-20 bg-[#F2F2F2] ">
@@ -18,33 +20,41 @@ const Footer = () => {
                 Growwin
               </h3>
               <p className="text-sm text-white leading-relaxed font-[var(--font-poppins)]  font-regular max-w-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi
-                sapien, mollis vel sagittis in, pretium eget mauris. Integer
-                efficitur sem eu massa sagittis sollicitudin.
+                Growwin Capital believes that financial growth begins with the
+                right mindset. We empower investors to take confident steps
+                toward wealth creation through smart strategies, disciplined
+                investing, and long-term vision across global markets.
               </p>
 
               {/* SOCIALS */}
               <div className="flex gap-4 mt-6">
                 {/* <span className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center cursor-pointer hover:bg-white/30"> */}
-                <img
-                  src={FaFacebookF}
-                  alt="Facebook"
-                  className="cursor-pointer hover:bg-white/30 rounded-full"
-                />
+                <a
+                  href="https://t.me/growwincapital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-full transition-all duration-300 hover:bg-white/30"
+                >
+                  <img src={telegram} alt="X (Twitter)" />
+                </a>
                 {/* </span> */}
                 {/* <span className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center cursor-pointer hover:bg-white/30"> */}
-                <img
-                  src={FaTwitter}
-                  alt="Twitter"
-                  className="cursor-pointer hover:bg-white/30 rounded-full"
-                />
+                <a
+                  href="https://x.com/growwincapital?s=20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-0.5 rounded-full transition-all duration-300 hover:bg-white/30"
+                >
+                  <img src={FaTwitter} alt="X (Twitter)" />
+                </a>
+
                 {/* </span> */}
                 {/* <span className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center cursor-pointer hover:bg-white/30"> */}
-                <img
+                {/* <img
                   src={FaLinkedinIn}
                   alt="LinkedIn"
                   className="cursor-pointer hover:bg-white/30 rounded-full"
-                />
+                /> */}
                 {/* </span> */}
               </div>
             </div>
@@ -70,11 +80,16 @@ const Footer = () => {
               </h4> */}
               <ul className="space-y-4 text-sm ">
                 <li className="flex items-center gap-3">
-                  <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center"><img src={FaPhoneAlt} alt="Phone" />
-                </div>
+                  <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
+                    <img src={FaPhoneAlt} alt="Phone" />
+                  </div>
                   <div className="flex flex-col">
-                    <span className="font-[var(--font-poppins)]  font-medium">+91 XXXXXXXXXX</span>
-                    <span className="font-[var(--font-poppins)]  font-medium">+91 XXXXXXXXXX</span>
+                    <span className="font-[var(--font-poppins)]  font-medium">
+                      Ticket Support
+                    </span>
+                    {/* <span className="font-[var(--font-poppins)]  font-medium">
+                      +91 XXXXXXXXXX
+                    </span> */}
                   </div>
                 </li>
 
@@ -84,17 +99,19 @@ const Footer = () => {
                 {/* </li> */}
                 <li className="flex items-center gap-3">
                   <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
-                  <img src={FaEnvelope} alt="Email" />
+                    <img src={FaEnvelope} alt="Email" />
                   </div>
-                  
-                  <span className="font-[var(--font-poppins)]  font-medium">yourmail@gmail.com</span>
+
+                  <span className="font-[var(--font-poppins)]  font-medium">
+                    info@growwincapital.com
+                  </span>
                 </li>
-                <li className="flex items-center gap-3">
+                {/* <li className="flex items-center gap-3">
                   <div className="border-1 rounded-full w-9 h-9 flex items-center justify-center">
                   <img src={FaMapMarkerAlt} alt="Location" />
                   </div>
                   <span className="font-[var(--font-poppins)]  font-medium">Your Address</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

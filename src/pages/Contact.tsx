@@ -60,7 +60,7 @@ const Contact = () => {
                 Get In <span className="font-semibold">Touch</span>
               </h3>
               <p className="text-base text-center font-[var(--font-poppins)]  font-regular text-[#5b3fa3] mb-10">
-                Dreaming in code? Let’s make it real.
+                Have questions about building smart wealth?
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-12 relative">
@@ -69,41 +69,54 @@ const Contact = () => {
                 <div className="absolute top-1/2 left-0 w-full h-px bg-[#51367E80] hidden sm:block" />
 
                 {/* Token Raise */}
-                <div className="flex flex-col items-center text-center gap-3">
-                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b3fa3]/10 text-[#5b3fa3]"> */}
-                  <img src={Globe} alt="Token" className="w-10 h-10" />
-                  {/* </div> */}
-                  <p className="font-[var(--font-poppins)]  font-medium text-[#51367E]">
-                    Token Raise
+                <a
+                  href="https://site.growwincapital.com/help"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                >
+                  <img src={Globe} alt="Ticket Raise" className="w-10 h-10" />
+
+                  <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
+                    Ticket Raise
                   </p>
-                  {/* <p className="text-sm text-gray-500">Coming soon</p> */}
-                </div>
+
+                  <p className="text-sm text-gray-500">Click to Raise</p>
+                </a>
 
                 {/* Email */}
-                <div className="flex flex-col items-center text-center gap-3">
-                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b3fa3]/10 text-[#5b3fa3]"> */}
-                  <img src={Mail} alt="Token" className="w-10 h-10" />
-                  {/* </div> */}
-                  <p className="font-[var(--font-poppins)]  font-medium text-[#51367E]">
+                <a
+                  href="mailto:info@growwincapital.com"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                >
+                  <img src={Mail} alt="Email" className="w-10 h-10" />
+
+                  <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
                     Email Address
                   </p>
-                  <p className="text-sm text-[#808080] font-[var(--font-poppins)]  font-regular">
+
+                  <p className="text-sm text-[#808080] font-[var(--font-poppins)] font-regular">
                     info@growwincapital.com
                   </p>
-                </div>
+                </a>
 
                 {/* Live Chat */}
-                <div className="flex flex-col items-center text-center gap-3">
-                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b3fa3]/10 text-[#5b3fa3]"> */}
-                  <img src={MessageCircle} alt="Token" className="w-10 h-10" />
-                  {/* </div> */}
-                  <p className="font-[var(--font-poppins)]  font-medium text-[#51367E]">
+                <a
+                  href="https://site.growwincapital.com/help"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                >
+                  <img
+                    src={MessageCircle}
+                    alt="Live Chat"
+                    className="w-10 h-10"
+                  />
+
+                  <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
                     Live Chat
                   </p>
-                  <p className="text-sm font-[var(--font-poppins)]  font-regular text-[#808080]">
-                    0000000000
+
+                  <p className="text-sm font-[var(--font-poppins)] font-regular text-[#808080]">
+                    Open
                   </p>
-                </div>
+                </a>
 
                 {/* Office */}
                 <div className="flex flex-col items-center text-center gap-3">

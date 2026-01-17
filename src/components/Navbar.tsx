@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Subscription", path: "/subscription" },
@@ -8,14 +6,15 @@ const navItems = [
   { label: "About us", path: "/about" },
   { label: "Blogs", path: "/blogs" },
 ];
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [active, setActive] = useState("Home");
 
   return (
-    <div className="fixed top-0 left-3 right-3 w-full z-50 ">
+    <div className="fixed top-0 left-3 right-3 w-full z-50">
       <div className="flex mx-10 items-center justify-between px-14 py-4">
+
         {/* Logo */}
         <div
           onClick={() => navigate("/")}
@@ -27,56 +26,52 @@ const Navbar = () => {
           </span>
         </div>
 
+        {/* Nav Items */}
         <div
           className="
-    flex items-center gap-[30px]
-    px-1.5 py-[6px]
-    rounded-full
-    border-1
-    border-[#F2EDF8]
-    bg-[#513382]/10
-    backdrop-blur-lg
-  "
+            flex items-center gap-[30px]
+            px-1.5 py-[6px]
+            rounded-full
+            border-1
+            border-[#F2EDF8]
+            bg-[#513382]/10
+            backdrop-blur-lg
+          "
         >
           {navItems.map((item) => (
-            <span
+            <NavLink
               key={item.label}
-              onClick={() => {
-                setActive(item.label);
-                navigate(item.path);
-              }}
-              className={`
-      px-4 py-1.5
-      rounded-full
-      text-base
-      font-[var(--font-poppins)] font-medium
-      cursor-pointer
-      transition-all duration-150
-      ${
-        active === item.label
-          ? "bg-growwin text-[#F2EDF8] shadow-[0_0_0_6px_#513382]"
-          : "text-gray-700 hover:bg-growwin hover:text-[#F2EDF8]"
-      }
-    `}
+              to={item.path}
+              className={({ isActive }) => `
+                px-4 py-1.5
+                rounded-full
+                text-base
+                font-[var(--font-poppins)] font-medium
+                transition-all duration-150
+                ${
+                  isActive
+                    ? "bg-growwin text-[#F2EDF8] shadow-[0_0_0_6px_#513382]"
+                    : "text-gray-700 hover:bg-growwin hover:text-[#F2EDF8]"
+                }
+              `}
             >
               {item.label}
-            </span>
+            </NavLink>
           ))}
         </div>
 
-        {/* Login Button */}
+        {/* Login */}
         <button
           onClick={() => {
             window.location.href = "https://site.growwincapital.com";
           }}
           className="
-    px-[22px] py-[10px]
-    rounded-full
-    bg-growwin
-    text-[#F2EDF8]
-    cursor-pointer
-    font-[var(--font-poppins)] font-medium
-  "
+            px-[22px] py-[10px]
+            rounded-full
+            bg-growwin
+            text-[#F2EDF8]
+            font-[var(--font-poppins)] font-medium
+          "
         >
           Login
         </button>

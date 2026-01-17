@@ -23,23 +23,14 @@ const TopFeatureCards = () => {
               </h3>
 
               <p className="text-gray-600 font-[var(--font-poppins)]  font-regular text-base leading-relaxed max-w-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                auctor leo ac dolor laoreet, quis consectetur metus venenatis.
+                A secure, intuitive fintech platform designed to simplify
+                financial management, empower smarter decisions, and deliver a
+                seamless experience for users across all financial needs.
               </p>
 
-              <div className="mt-6 text-sm text-gray-500 font-[var(--font-poppins)]  font-regular">
+              {/* <div className="mt-6 text-sm text-gray-500 font-[var(--font-poppins)]  font-regular">
                 Coming Soon...
-              </div>
-
-              <div className="mt-3 flex gap-3">
-                <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                  {/* <span className="text-white text-sm">A</span> */}
-                  <img src={android} />
-                </div>
-                <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                  <img src={ios} />
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -74,8 +65,9 @@ const TopFeatureCards = () => {
             </h3>
 
             <p className="relative z-10 text-[#6b6b6b] font-[var(--font-poppins)] text-base leading-relaxed max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              auctor leo ac dolor laoreet, quis consectetur metus venenatis.
+              Our user-friendly application offers a clean interface, intuitive
+              navigation, and smooth interactions, making tasks simple,
+              efficient, and enjoyable for users of all experience levels.
             </p>
           </div>
         </div>

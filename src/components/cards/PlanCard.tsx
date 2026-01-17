@@ -1,6 +1,12 @@
+type PlanFeature = {
+  label: string;
+  value: string;
+};
+
 type PlanCardProps = {
   title: string;
   price: string;
+  features: PlanFeature[];
   popular?: boolean;
   variant?: "solid" | "gradient";
 };
@@ -8,6 +14,7 @@ type PlanCardProps = {
 const PlanCard = ({
   title,
   price,
+  features,
   popular = false,
   variant = "solid",
 }: PlanCardProps) => {
@@ -70,32 +77,23 @@ const PlanCard = ({
           </p>
 
           <div className="space-y-3 text-sm text-gray-600 font-[var(--font-poppins)]">
-            <div className="flex justify-between">
-              <span>Capital Back</span>
-              <span>: Yes</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Weekly Return</span>
-              <span>: 2.75%</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Yearly Return</span>
-              <span>: 132%</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Return</span>
-              <span>: +10%</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Investment Range</span>
-              <span>: 2,001 USDT or more</span>
-            </div>
+            {features.map((feature, index) => (
+              <div key={index} className="flex justify-between">
+                <span>{feature.label}</span>
+                <span>: {feature.value}</span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Button */}
-        <button className="w-full py-4 rounded-full bg-[#51367e] text-white font-[var(--font-poppins)] font-medium hover:opacity-90 transition">
-          Buy Now
+        <button
+          onClick={() => {
+            window.location.href = "https://site.growwincapital.com";
+          }}
+          className="w-full py-4 rounded-full bg-[#51367e] text-white font-[var(--font-poppins)] font-medium hover:opacity-90 transition"
+        >
+          Invest Now
         </button>
       </div>
     </div>

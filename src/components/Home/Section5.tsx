@@ -13,7 +13,7 @@ const features = [
   },
   {
     title: "Smart Risk Management",
-    desc: "Focus on minimizing downside risk through advanced risk-control strategies and disciplined trading.",
+    desc: "We follow disciplined risk management strategies to protect capital and manage market volatility effectively.",
   },
   {
     title: "Transparent & Secure System",
