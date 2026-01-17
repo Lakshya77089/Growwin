@@ -17,9 +17,12 @@ const Navbar = () => {
     <div className="fixed top-0 left-3 right-3 w-full z-50 ">
       <div className="flex mx-10 items-center justify-between px-14 py-4">
         {/* Logo */}
-        <div className="flex items-center gap-2 text-growwin font-semibold text-[20px]">
+        <div
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 text-growwin font-semibold text-[20px] cursor-pointer"
+        >
           <img src="/growwin-logo.svg" alt="Growwin" className="w-9 h-9" />
-          <span className="font-[var(--font-poppins)]  font-semibold text-2xl ">
+          <span className="font-[var(--font-poppins)] font-semibold text-2xl">
             Growwin
           </span>
         </div>
@@ -63,13 +66,17 @@ const Navbar = () => {
 
         {/* Login Button */}
         <button
+          onClick={() => {
+            window.location.href = "https://site.growwincapital.com";
+          }}
           className="
-            px-[22px] py-[10px]
-            rounded-full
-            bg-growwin
-            text-[#F2EDF8]
-            font-[var(--font-poppins)]  font-medium
-          "
+    px-[22px] py-[10px]
+    rounded-full
+    bg-growwin
+    text-[#F2EDF8]
+    cursor-pointer
+    font-[var(--font-poppins)] font-medium
+  "
         >
           Login
         </button>

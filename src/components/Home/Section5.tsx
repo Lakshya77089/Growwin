@@ -12,16 +12,17 @@ const features = [
     desc: "Your funds are invested across multiple asset classes to reduce risk.",
   },
   {
-    title: "24/7 Customer Support",
-    desc: "Round-the-clock assistance for withdrawals, queries, and updates.",
+    title: "Smart Risk Management",
+    desc: "Focus on minimizing downside risk through advanced risk-control strategies and disciplined trading.",
   },
   {
     title: "Transparent & Secure System",
     desc: "Live tracking, clear reporting, and complete transparency.",
   },
+
   {
-    title: "Queries that crawled.",
-    desc: "When milliseconds matter, slow queries kill momentum. Legacy logic and bloated joins made every request a drag.",
+    title: "24/7 Customer Support",
+    desc: "Round-the-clock assistance for withdrawals, queries, and updates.",
   },
 ];
 
