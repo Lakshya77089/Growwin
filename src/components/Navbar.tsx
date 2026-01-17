@@ -4,7 +4,7 @@ const navItems = [
   { label: "FAQ", path: "/faq" },
   { label: "Contact us", path: "/contact" },
   { label: "About us", path: "/about" },
-  { label: "Blogs", path: "/blogs" },
+  // { label: "Blogs", path: "/blogs" },
 ];
 import { NavLink, useNavigate } from "react-router-dom";
 

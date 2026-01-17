@@ -15,11 +15,11 @@ const Footer = () => {
           {/* TOP GRID */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* LEFT */}
-            <div>
+            <div className="md:col-span-1">
               <h3 className="text-4xl font-[var(--font-poppins)]  font-semibold mb-4">
                 Growwin
               </h3>
-              <p className="text-sm text-white leading-relaxed font-[var(--font-poppins)]  font-regular max-w-sm">
+              <p className="text-sm text-white leading-relaxed font-[var(--font-poppins)]  font-regular max-w-lg">
                 Growwin Capital believes that financial growth begins with the
                 right mindset. We empower investors to take confident steps
                 toward wealth creation through smart strategies, disciplined
@@ -33,7 +33,7 @@ const Footer = () => {
                   href="https://t.me/growwincapital"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block rounded-full transition-all duration-300 hover:bg-white/30"
+                  className="inline-block  transition-all duration-300 hover:bg-white/30"
                 >
                   <img src={telegram} alt="X (Twitter)" />
                 </a>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             {/* MIDDLE */}
-            <div className="ml-40">
+            <div className="md:pl-24">
               {/* <h4 className="text-lg font-poppins-semibold mb-4">Quick Links</h4>                                                                                                                                              */}
               <ul className="space-y-4 text-sm text-white/80 font-[var(--font-poppins)]  font-regular">
                 <li className="hover:text-white cursor-pointer">Home</li>
