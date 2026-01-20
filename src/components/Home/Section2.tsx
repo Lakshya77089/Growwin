@@ -2,7 +2,7 @@ import officeImg from "/officeimage.svg"; // update path if needed
 
 const Section2 = () => {
   return (
-    <section className="w-full py-20 bg-[#F2F2F2]">
+    <section className="relative w-full py-20 bg-[#F2F2F2] md:mt-0 -mt-50 [@media(min-width:768px)_and_(max-width:1023px)]:-mt-72 md:z-0 z-[20]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -19,7 +19,7 @@ const Section2 = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* Left Text */}
-          <div className="text-gray-600 text-lg leading-relaxed font-[var(--font-poppins)]  font-medium space-y-4">
+          <div className="text-gray-600 text-lg leading-relaxed font-[var(--font-poppins)]  font-medium space-y-4 order-2 lg:order-1">
             <p className="font-poppins-semibold text-justify">
               <span className="font-bold">Our company</span> stands at the forefront of the investment industry,
               offering a unique blend of multi-level marketing and forex trading
@@ -41,7 +41,7 @@ const Section2 = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative w-full h-[380px] md:h-full overflow-hidden rounded-[28px]">
+          <div className="relative w-full h-[380px] md:h-full overflow-hidden rounded-[28px] order-1 lg:order-2">
             <img
               src={officeImg}
               alt="Office workspace"

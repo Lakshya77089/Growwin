@@ -6,8 +6,8 @@ import withdrawSvg from "/withdraw.svg";
 
 const Section4 = () => {
   return (
-    <section className="w-full py-32 relative  mt-15 bg-[#F2F2F2] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative min-h-[1150px]">
+    <section className=" w-full py-32 relative  md:mt-15 -mt-20 bg-[#F2F2F2] overflow-hidden ">
+      <div className="hidden lg:block  max-w-7xl mx-auto px-6 relative min-h-[1150px]">
         {/* ===== Heading ===== */}
         <div className="text-center mb-28">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
@@ -91,8 +91,12 @@ const Section4 = () => {
             <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#5b3fa3] text-white text-lg px-3 py-1 rounded-sm mb-2">
               Step 2
             </span>
-            <h4 className="font-poppins-semibold text-lg mb-1 font-[var(--font-poppins)]  font-medium">Add Funds</h4>
-            <p className="text-sm text-gray-500 font-[var(--font-poppins)]  font-medium">Choose a plan and</p>
+            <h4 className="font-poppins-semibold text-lg mb-1 font-[var(--font-poppins)]  font-medium">
+              Add Funds
+            </h4>
+            <p className="text-sm text-gray-500 font-[var(--font-poppins)]  font-medium">
+              Choose a plan and
+            </p>
             <p className="text-sm text-gray-500 mb-4 font-[var(--font-poppins)]  font-medium">
               deposit your investment amount.
             </p>
@@ -163,7 +167,9 @@ const Section4 = () => {
             <p className="font-[var(--font-poppins)]  font-medium text-sm text-gray-500">
               Withdraw your profits or capital
             </p>
-            <p className="text-sm text-gray-500 mb-4 font-[var(--font-poppins)]  font-medium">anytime with ease.</p>
+            <p className="text-sm text-gray-500 mb-4 font-[var(--font-poppins)]  font-medium">
+              anytime with ease.
+            </p>
           </div>
           {/* <img src={withdrawSvg} alt="Withdraw" className="ml-auto" /> */}
           <div className="relative w-[320px] ml-20">
@@ -180,6 +186,198 @@ const Section4 = () => {
               className="pointer-events-none absolute bottom-0 left-0 w-full h-[140px]
                   bg-gradient-to-t from-white/20 to-transparent"
             />
+          </div>
+        </div>
+      </div>
+      {/* Moblie  */}
+      {/* <div className=" max-w-7xl mx-auto px-6 relative min-h-[1150px]">
+        <div className="text-center mb-28">
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
+            How <span className="text-[#5b3fa3]">Growwin Capital</span>
+          </h2>
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
+            work&apos;s
+          </h2>
+        </div>
+      </div> */}
+
+      {/* ================= MOBILE VERSION ================= */}
+      <div className="relative block lg:hidden px-4 py-16 bg-[#F2F2F2]">
+        <div className="text-center md:mb-28 mb-10">
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
+            How <span className="text-[#5b3fa3]">Growwin Capital</span>
+          </h2>
+          <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
+            work&apos;s
+          </h2>
+        </div>
+        {/* VERTICAL DOTTED PATH */}
+        {/* <svg
+          className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none z-0"
+          width="360"
+          height="2500"
+          viewBox="0 0 360 900"
+          fill="none"
+        >
+          <path
+            d="
+      M 180 -230
+      H 300
+      V -100
+      H 180
+      V 75
+      H 300
+      V 240
+      H 60
+      V 530
+      H 300
+      V 995
+      H 60
+      V 1100
+      H 180
+      V 1300
+    "
+            stroke="#5b3fa3"
+            strokeWidth="2"
+            strokeDasharray="6 6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg> */}
+
+        <div className="relative z-10 space-y-20">
+          {/* ===== STEP 1 (LEFT) ===== */}
+
+          <div className="flex flex-col items-center gap-4">
+            <img src={signupSvg} className="w-[300px] rounded-xl" />
+
+            <div className="text-center relative">
+              {/* STEP BADGE */}
+              <span className="relative inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 1{/* HORIZONTAL DOTTED LINE */}
+                <span
+                  className="
+          absolute
+          top-1/2
+          left-full
+          ml-2
+          w-22
+          border-t-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+                />
+              </span>
+              <span
+        className="
+          absolute
+          top-[20%]
+          -right-6
+          mt-0
+          h-25
+          border-l-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+      />
+       <span
+                  className="
+          absolute
+          top-[130%]
+          left-[47%]
+          ml-2
+          w-34
+          border-t-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+                />
+                      <span
+        className="
+          absolute
+          top-[130%]
+          left-[48%]
+          mt-0
+          h-15
+          border-l-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+      />
+              <h4 className="text-lg font-medium">Create an Account</h4>
+              <p className="text-sm text-gray-500">
+                Sign up and complete your KYC.
+              </p>
+            </div>
+          </div>
+
+          {/* ===== STEP 2 (RIGHT) ===== */}
+          <div className="flex flex-col items-center gap-4 text-right z-10">
+            <img src={addFundsSvg} className="w-[300px] rounded-xl" />
+
+            <div className="text-center md:w-full w-[40%]">
+              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 2
+              </span>
+              <h4 className="text-lg font-medium">Add Funds</h4>
+              <p className="text-sm text-gray-500">
+                Choose a plan and deposit your investment.
+              </p>
+            </div>
+          </div>
+
+          {/* ===== STEP 3 (CENTER) ===== */}
+          <div className="flex flex-col items-center text-center">
+            <img src={manageFundsSvg} className="w-[250px] mt-4 rounded-xl" />
+            <div className="text-center w-[60%]">
+              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 3
+              </span>
+              <h4 className="text-lg font-medium">We Manage Your Funds</h4>
+              <p className="text-sm text-gray-500">
+                Our experts manage your money across global markets.
+              </p>
+            </div>
+          </div>
+
+          {/* ===== STEP 4 (LEFT) ===== */}
+          <div className="flex flex-col items-center gap-4">
+            <img src={profitsSvg} className="w-[220px]" />
+            <div
+              className="pointer-events-none absolute top-0 left-0 w-full h-[80px]
+                  bg-gradient-to-b from-white/20 to-transparent"
+            />
+
+            {/* BOTTOM FADE */}
+            <div
+              className="pointer-events-none absolute bottom-0 left-0 w-full h-[140px]
+                  bg-gradient-to-t from-white/20 to-transparent"
+            />
+            <div className="text-center w-[60%]">
+              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 4
+              </span>
+              <h4 className="text-lg font-medium">Receive Monthly Profits</h4>
+              <p className="text-sm text-gray-500">
+                Fixed monthly returns credited automatically.
+              </p>
+            </div>
+          </div>
+
+          {/* ===== STEP 5 (RIGHT) ===== */}
+          <div className="flex flex-col items-center gap-4 text-right">
+            <img src={withdrawSvg} className="w-[300px] rounded-xl" />
+
+            <div className="text-center">
+              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 5
+              </span>
+              <h4 className="text-lg font-medium">Withdraw Anytime</h4>
+              <p className="text-sm text-gray-500">
+                Withdraw your profits or capital anytime.
+              </p>
+            </div>
           </div>
         </div>
       </div>

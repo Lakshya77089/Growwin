@@ -10,28 +10,61 @@ const TopFeatureCards = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 mb-10">
           {/* LEFT BIG CARD */}
 
-          <div className="relative bg-[#e6e6e6] rounded-[45px] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.08)] overflow-hidden border-2 border-[#e2e3e2]">
+          <div
+            className="
+  relative bg-[#e6e6e6]
+  rounded-3xl md:rounded-[45px]
+  p-10 
+  shadow-[0_15px_40px_rgba(0,0,0,0.08)]
+  overflow-hidden
+  border-2 border-[#e2e3e2]
+  flex
+"
+          >
             {/* Phone mockup */}
-            <div className="absolute left-4 top-[30px] w-[300px]">
-              <img src={appMockup} alt="Mobile App" className="rounded-xl " />
+            <div
+              className="
+              hidden md:block
+    relative
+    w-full
+    h-[160px]          /* control visible height on mobile */
+    mb-6
+
+    flex items-center justify-center   /* 👈 mobile vertical centering */
+
+    md:absolute md:left-6 md:top-[60%]
+    md:-translate-y-1/2
+    md:w-[260px] md:h-[340px]
+    md:mb-0
+
+    overflow-hidden
+  "
+            >
+              <img
+                src={appMockup}
+                alt="Mobile App"
+                className="
+      w-full
+      h-full
+      object-cover
+      object-top       /* 👈 shows top part like reference */
+      rounded-2xl
+    "
+              />
             </div>
 
             {/* Content */}
-            <div className="ml-[250px]">
-              <h3 className="text-2xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D] mb-3">
+            <div className="md:ml-[270px] text-center md:text-left">
+              <h3 className="text-2xl text-left  font-[var(--font-poppins)] font-medium text-[#2D2D2D] mb-3">
                 Mobile Application
               </h3>
 
-              <p className="text-gray-600 font-[var(--font-poppins)]  font-regular text-base leading-relaxed max-w-xl">
+              <p className="text-gray-600 font-[var(--font-poppins)] font-regular  text-left text-base leading-relaxed max-w-xl mx-auto md:mx-0">
                 The Growwin Capital App is a smart and secure platform designed
                 to manage your investments effortlessly. Track your
                 self-investment returns, team income, and rewards in real
                 time—anytime, anywhere, directly from your mobile.
               </p>
-
-              {/* <div className="mt-6 text-sm text-gray-500 font-[var(--font-poppins)]  font-regular">
-                Coming Soon...
-              </div> */}
             </div>
           </div>
 
