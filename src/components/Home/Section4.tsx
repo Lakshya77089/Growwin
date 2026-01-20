@@ -262,7 +262,7 @@ const Section4 = () => {
           top-1/2
           left-full
           ml-2
-          w-22
+          w-17
           border-t-2
           border-dashed
           border-[#5b3fa3]
@@ -270,31 +270,47 @@ const Section4 = () => {
                 />
               </span>
               <span
-        className="
+                className="
           absolute
-          top-[20%]
+          top-[34%]
           -right-6
           mt-0
-          h-25
+          h-21
           border-l-2
           border-dashed
           border-[#5b3fa3]
         "
-      />
-       <span
-                  className="
+              />
+              <span
+  className="
+    pointer-events-none
+    absolute
+    top-[20%]
+    -right-6
+    w-4
+    h-4
+    border-t-2
+    border-r-2
+    border-dashed
+    border-[#5b3fa3]
+    rounded-tr-full
+  "
+/>
+
+              <span
+                className="
           absolute
           top-[130%]
-          left-[47%]
+          left-[46%]
           ml-2
           w-34
           border-t-2
           border-dashed
           border-[#5b3fa3]
         "
-                />
-                      <span
-        className="
+              />
+              <span
+                className="
           absolute
           top-[130%]
           left-[48%]
@@ -304,7 +320,7 @@ const Section4 = () => {
           border-dashed
           border-[#5b3fa3]
         "
-      />
+              />
               <h4 className="text-lg font-medium">Create an Account</h4>
               <p className="text-sm text-gray-500">
                 Sign up and complete your KYC.
@@ -317,9 +333,70 @@ const Section4 = () => {
             <img src={addFundsSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center md:w-full w-[40%]">
-              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
-                Step 2
+              <span className="relative inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+                Step 2{/* HORIZONTAL DOTTED LINE */}
+                <span
+                  className="
+          absolute
+          top-1/2
+          left-full
+          ml-2
+          w-22
+          border-t-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+                />
+                <span
+                className="
+          absolute
+          top-[50%]
+          -right-24
+          mt-0
+          h-50
+          border-l-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+              />
+               <span
+                className="
+          absolute
+          top-[600%]
+          -right-[110%]
+          ml-2
+          w-60
+          border-t-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+              />
+              <span
+                className="
+          absolute
+          top-[600%]
+          -left-[80%]
+          mt-0
+          h-70
+          border-l-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+              />
+              <span
+                  className="
+          absolute
+          top-[1370%]
+          right-[100%]
+          ml-2
+          w-16
+          border-t-2
+          border-dashed
+          border-[#5b3fa3]
+        "
+                />
               </span>
+
               <h4 className="text-lg font-medium">Add Funds</h4>
               <p className="text-sm text-gray-500">
                 Choose a plan and deposit your investment.
@@ -328,7 +405,7 @@ const Section4 = () => {
           </div>
 
           {/* ===== STEP 3 (CENTER) ===== */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center ">
             <img src={manageFundsSvg} className="w-[250px] mt-4 rounded-xl" />
             <div className="text-center w-[60%]">
               <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">

@@ -123,7 +123,7 @@ const Footer = () => {
           </div>
 
           {/* DISCLAIMER */}
-          <p className="textsm text-white/70 leading-relaxed font-[var(--font-poppins)]  font-regular mt-8">
+          <p className="text-base text-white/70 leading-relaxed font-[var(--font-poppins)] text-justify md:text-left  font-regular mt-8">
             Growwin Capital offers investment services in forex, stocks,
             commodities, crypto, and real estate. All investments carry market
             risks, including possible loss of capital. Past performance is not a

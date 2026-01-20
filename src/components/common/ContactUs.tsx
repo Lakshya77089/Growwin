@@ -31,10 +31,11 @@ const ContactUs = () => {
 
             {/* Message */}
             <input
-              type="text"
+                type="text"
               placeholder="Enter your Message here"
               className="
-                flex-1
+                w-full
+                md:flex-1
                 h-[56px]
                 px-6
                 rounded-full
@@ -51,6 +52,8 @@ const ContactUs = () => {
               className="
                 h-[56px]
                 px-8
+                md:w-auto
+                w-full
                 rounded-full
                 bg-[#5b3fa3]
                 text-white
@@ -65,7 +68,7 @@ const ContactUs = () => {
           </div>
 
           {/* Note */}
-          <p className="text-xs text-gray-500 mt-6 text-center max-w-3xl">
+          <p className="text-xs  text-gray-500 mt-6 text-center max-w-3xl">
             Note : If you have any questions or need further information,
             please don&apos;t hesitate to contact us. We&apos;re here to help!
           </p>

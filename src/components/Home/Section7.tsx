@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 const carouselData = [
   {
     id: "01",
@@ -25,39 +27,66 @@ const carouselData = [
   },
 ];
 
-import { useRef } from "react";
-
 const Section7 = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="w-full py-15 bg-[#F2F2F2] overflow-hidden">
+    <section className="w-full py-20 bg-[#F2F2F2] overflow-hidden">
       <div className="w-full mx-auto px-6">
+
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-poppins-bold text-[#2D2D2D]">
+          <h2 className="text-4xl md:text-5xl font-poppins-bold text-[#2D2D2D]">
             Meet Our <span className="text-[#5b3fa3]">Team</span>
           </h2>
         </div>
 
-        {/* ===== Carousel ===== */}
-        <div
-          className="
-    ml-[calc((100vw-80rem)/2)]
-    pl-6
-  "
-        >
+        {/* ================= MOBILE STACK (NO CAROUSEL) ================= */}
+        <div className="block md:hidden space-y-16">
+          {carouselData.map((item) => (
+            <div key={item.id}>
+              {/* IMAGE */}
+              <div className="rounded-3xl overflow-hidden shadow-lg">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-[220px] object-cover"
+                />
+              </div>
+
+              {/* TEXT */}
+              <div className="mt-6 font-[var(--font-poppins)]">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-[#5b3fa3] font-semibold text-lg">
+                    {item.id}
+                  </span>
+                  <span className="text-gray-400">—</span>
+                  <h4 className="text-lg font-semibold text-[#2D2D2D]">
+                    {item.title}
+                  </h4>
+                </div>
+
+                <p className="text-sm text-justify text-gray-600 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ================= DESKTOP CAROUSEL ================= */}
+        <div className="hidden md:block ml-[calc((100vw-80rem)/2)] pl-6">
           <div
             ref={sliderRef}
             className="
-    flex gap-16
-    overflow-x-auto
-    scroll-smooth
-    scrollbar-hide
-    touch-pan-x
-    select-none
-    pr-[300px]
-  "
+              flex gap-16
+              overflow-x-auto
+              scroll-smooth
+              scrollbar-hide
+              touch-pan-x
+              select-none
+              pr-[300px]
+            "
           >
             {carouselData.map((item) => (
               <div key={item.id} className="min-w-[520px]">
@@ -71,13 +100,13 @@ const Section7 = () => {
                 </div>
 
                 {/* TEXT */}
-                <div className="mt-8 max-w-[520px] font-[var(--font-poppins)]  font-regular">
+                <div className="mt-8 max-w-[520px] font-[var(--font-poppins)]">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-[#5b3fa3] font-semibold text-lg">
                       {item.id}
                     </span>
                     <span className="text-gray-400">—</span>
-                    <h4 className="text-lg font-poppins-semibold text-[#2D2D2D]">
+                    <h4 className="text-lg font-semibold text-[#2D2D2D]">
                       {item.title}
                     </h4>
                   </div>
@@ -90,6 +119,7 @@ const Section7 = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
