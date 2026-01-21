@@ -31,7 +31,7 @@ const Section7 = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="w-full py-20 bg-[#F2F2F2] overflow-hidden">
+    <section className="-mt-10 md:mt-0 w-full py-20 bg-[#F2F2F2] overflow-hidden">
       <div className="w-full mx-auto px-6">
 
         {/* ===== Heading ===== */}
@@ -42,7 +42,7 @@ const Section7 = () => {
         </div>
 
         {/* ================= MOBILE STACK (NO CAROUSEL) ================= */}
-        <div className="block md:hidden space-y-16">
+        <div className=" block md:hidden space-y-16">
           {carouselData.map((item) => (
             <div key={item.id}>
               {/* IMAGE */}

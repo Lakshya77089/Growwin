@@ -8,29 +8,9 @@ import Section6 from "../components/Home/Section6";
 import Section7 from "../components/Home/Section7";
 import ContactUs from "../components/common/ContactUs";
 import Footer from "../components/common/Footer";
-import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+
+
 function Home() {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 0.1,          // scroll speed (lower = faster)
-      easing: (t) => 1 - Math.pow(1 - t, 20), // smooth easing
-      smoothWheel: true,
-      // smoothTouch: false,
-    });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
   return (
     <>
       {/* <Navbar /> */}

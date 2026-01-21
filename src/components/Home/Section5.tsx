@@ -28,7 +28,7 @@ const features = [
 
 const Section5 = () => {
   return (
-    <section className="w-full py-32 bg-[#F2F2F2]">
+    <section className="w-full md:py-32 bg-[#F2F2F2]">
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">

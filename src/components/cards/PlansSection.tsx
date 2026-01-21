@@ -27,7 +27,7 @@ const classicPlanFeatures = [
 
 const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
   return (
-    <section className="w-full mb-10">
+    <section className="w-full mb-10 ">
       <div className="max-w-7xl mx-auto px-6 pb-20 ">
 
         {!hideHeader && (
@@ -43,7 +43,7 @@ const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
           </div>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
           <PlanCard title="Basic" price="+5.5%" features={basicPlanFeatures}/>
           <PlanCard title="Classic" price="+6.5%"  variant="gradient" features={classicPlanFeatures}/>
           <PlanCard title="Platinum" price="+12%" popular features={premiumPlanFeatures}/>

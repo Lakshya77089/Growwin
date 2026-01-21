@@ -3,6 +3,23 @@ import addFundsSvg from "/add-funds.svg";
 import manageFundsSvg from "/manage-funds.svg";
 import profitsSvg from "/profits.svg";
 import withdrawSvg from "/withdraw.svg";
+const StepConnector = ({ height = "h-16" }) => {
+  return (
+    <div className="flex justify-center">
+      <div className="relative flex flex-col items-center">
+        {/* DOTTED LINE */}
+        <div
+          className={`${height} border-l-2 border-dashed border-[#51367e]`}
+        />
+
+        {/* ARROW */}
+        <div className="w-7 h-7 rounded-full bg-[#51367e] flex items-center justify-center text-white rotate-180">
+          ^
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Section4 = () => {
   return (
@@ -211,190 +228,33 @@ const Section4 = () => {
             work&apos;s
           </h2>
         </div>
-        {/* VERTICAL DOTTED PATH */}
-        {/* <svg
-          className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none z-0"
-          width="360"
-          height="2500"
-          viewBox="0 0 360 900"
-          fill="none"
-        >
-          <path
-            d="
-      M 180 -230
-      H 300
-      V -100
-      H 180
-      V 75
-      H 300
-      V 240
-      H 60
-      V 530
-      H 300
-      V 995
-      H 60
-      V 1100
-      H 180
-      V 1300
-    "
-            stroke="#51367e"
-            strokeWidth="2"
-            strokeDasharray="6 6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
-        </svg> */}
 
         <div className="relative z-10 space-y-20">
           {/* ===== STEP 1 (LEFT) ===== */}
 
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 mb-10  ">
             <img src={signupSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center relative">
               {/* STEP BADGE */}
               <span className="relative inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 1{/* HORIZONTAL DOTTED LINE */}
-                <span
-                  className="
-          absolute
-          top-1/2
-          left-full
-          ml-2
-          w-17
-          border-t-2
-          border-dashed
-          border-[#51367e]
-        "
-                />
               </span>
-              <span
-                className="
-          absolute
-          top-[34%]
-          -right-6
-          mt-0
-          h-21
-          border-l-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
-              <span
-  className="
-    pointer-events-none
-    absolute
-    top-[20%]
-    -right-6
-    w-4
-    h-4
-    border-t-2
-    border-r-2
-    border-dashed
-    border-[#51367e]
-    rounded-tr-full
-  "
-/>
 
-              <span
-                className="
-          absolute
-          top-[130%]
-          left-[46%]
-          ml-2
-          w-34
-          border-t-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
-              <span
-                className="
-          absolute
-          top-[130%]
-          left-[48%]
-          mt-0
-          h-15
-          border-l-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
               <h4 className="text-lg font-medium">Create an Account</h4>
               <p className="text-sm text-gray-500">
                 Sign up and complete your KYC.
               </p>
             </div>
           </div>
-
+          <StepConnector height="h-20" />
           {/* ===== STEP 2 (RIGHT) ===== */}
-          <div className="flex flex-col items-center gap-4 text-right z-10">
+          <div className="flex flex-col items-center gap-4 -mt-10 mb-10 text-right">
             <img src={addFundsSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center md:w-full w-[40%]">
               <span className="relative inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 2{/* HORIZONTAL DOTTED LINE */}
-                <span
-                  className="
-          absolute
-          top-1/2
-          left-full
-          ml-2
-          w-22
-          border-t-2
-          border-dashed
-          border-[#51367e]
-        "
-                />
-                <span
-                className="
-          absolute
-          top-[50%]
-          -right-24
-          mt-0
-          h-50
-          border-l-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
-               <span
-                className="
-          absolute
-          top-[600%]
-          -right-[110%]
-          ml-2
-          w-60
-          border-t-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
-              <span
-                className="
-          absolute
-          top-[600%]
-          -left-[80%]
-          mt-0
-          h-70
-          border-l-2
-          border-dashed
-          border-[#51367e]
-        "
-              />
-              <span
-                  className="
-          absolute
-          top-[1370%]
-          right-[100%]
-          ml-2
-          w-16
-          border-t-2
-          border-dashed
-          border-[#51367e]
-        "
-                />
               </span>
 
               <h4 className="text-lg font-medium">Add Funds</h4>
@@ -404,8 +264,10 @@ const Section4 = () => {
             </div>
           </div>
 
+          <StepConnector height="h-20" />
+
           {/* ===== STEP 3 (CENTER) ===== */}
-          <div className="flex flex-col items-center text-center ">
+          <div className="flex flex-col items-center text-center -mt-20 mb-10">
             <img src={manageFundsSvg} className="w-[250px] mt-4 rounded-xl" />
             <div className="text-center w-[60%]">
               <span className="inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
@@ -418,8 +280,10 @@ const Section4 = () => {
             </div>
           </div>
 
+          <StepConnector height="h-20" />
+
           {/* ===== STEP 4 (LEFT) ===== */}
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center -mt-10 mb-10 gap-4">
             <img src={profitsSvg} className="w-[220px]" />
             <div
               className="pointer-events-none absolute top-0 left-0 w-full h-[80px]
@@ -442,8 +306,9 @@ const Section4 = () => {
             </div>
           </div>
 
-          {/* ===== STEP 5 (RIGHT) ===== */}
-          <div className="flex flex-col items-center gap-4 text-right">
+          <StepConnector height="h-20" />
+
+          <div className="flex flex-col items-center gap-4 -mt-20 text-right relative z-10">
             <img src={withdrawSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center">
