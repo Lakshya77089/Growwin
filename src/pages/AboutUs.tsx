@@ -28,26 +28,26 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl md:text-left text-center mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
             <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-semibold text-[#5b3fa3] mb-6">
               Mission
             </h3>
 
-            <p className="text-[#2D2D2D] font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
               Our mission is to deliver secure, predictable, and professionally
               managed investment solutions that provide stable monthly income to
               our clients.
             </p>
 
-            <p className="text-[#2D2D2D] font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
               We focus on disciplined risk management, global diversification
               across forex, stocks, crypto, and real estate, and complete
               transparency.
             </p>
 
-            <p className="text-[#2D2D2D] font-[var(--font-poppins)] text-sm md:text-base leading-relaxed">
+            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed">
               Growwin Capital is committed to helping investors grow steadily,
               make informed financial decisions, and move toward financial
               freedom through trustworthy and ethical investment practices.
@@ -86,7 +86,7 @@ const AboutUs = () => {
         </div>
         <div className="max-w-7xl mt-30 mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* LEFT: Images */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="hidden lg:grid grid grid-cols-2 gap-6">
             {/* Tall Left Image */}
             <div>
               <div className="row-span-3 mb-5 rounded-3xl overflow-hidden">
@@ -144,6 +144,46 @@ const AboutUs = () => {
               and accessible by offering transparent systems, advanced market
               strategies, and consistent monthly earnings for every investor.
             </p>
+          </div>
+          <div className=" grid grid-cols-2 gap-6">
+            {/* Tall Left Image */}
+            <div>
+              <div className="row-span-3 mb-5 rounded-3xl overflow-hidden">
+                <img
+                  src="/vision-1.svg"
+                  alt="Vision notebook"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Top Right Image */}
+              <div className="rounded-3xl overflow-hidden">
+                <img
+                  src="/vision-2.svg"
+                  alt="Building"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            {/* Middle Right Image */}
+            <div>
+              <div className="rounded-3xl mb-5 overflow-hidden">
+                <img
+                  src="/vision-3.svg"
+                  alt="Target focus"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Bottom Right Image */}
+              <div className="rounded-3xl overflow-hidden">
+                <img
+                  src="/vision-4.svg"
+                  alt="Team collaboration"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
