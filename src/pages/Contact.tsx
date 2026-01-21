@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-6xl font-[var(--font-jost)]  font-semibold text-[#5b3fa3] mb-6">
+            <h2 className="text-4xl md:text-6xl font-[var(--font-jost)]  font-semibold text-[#51367e] mb-6">
               CONTACT US
             </h2>
             <p className="text-[#2D2D2D] max-w-5xl mx-auto text-sm md:text-base leading-relaxed">
@@ -57,10 +57,10 @@ const Contact = () => {
 
             {/* Right content */}
             <div className="relative  rounded-3xl p-10 ">
-              <h3 className="text-5xl text-center font-[var(--font-poppins)]  font-regular text-[#5b3fa3] mb-2">
+              <h3 className="text-5xl text-center font-[var(--font-poppins)]  font-regular text-[#51367e] mb-2">
                 Get In <span className="font-semibold">Touch</span>
               </h3>
-              <p className="text-base text-center font-[var(--font-poppins)]  font-regular text-[#5b3fa3] mb-10">
+              <p className="text-base text-center font-[var(--font-poppins)]  font-regular text-[#51367e] mb-10">
                 Have questions about building smart wealth?
               </p>
 
@@ -121,7 +121,7 @@ const Contact = () => {
 
                 {/* Office */}
                 <div className="flex flex-col items-center text-center gap-3">
-                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b3fa3]/10 text-[#5b3fa3]"> */}
+                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#51367e]/10 text-[#51367e]"> */}
                   <img src={MapPin} alt="Token" className="w-10 h-10" />
                   {/* </div> */}
                   <p className="font-[var(--font-poppins)]  font-medium text-[#51367E]">
@@ -143,7 +143,7 @@ const Contact = () => {
         <div className="absolute top-[40%]   w-[80vw] max-w-[380px] h-[80vw]  bg-[#941bb9]/20 rounded-full blur-[160px]" />
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-[var(--font-jost)] font-semibold text-[#5b3fa3] mb-4">
+          <h2 className="text-3xl font-[var(--font-jost)] font-semibold text-[#51367e] mb-4">
             CONTACT US
           </h2>
 
@@ -175,10 +175,10 @@ const Contact = () => {
         />
         {/* Get in Touch */}
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-[var(--font-poppins)] font-semibold text-[#5b3fa3]">
+          <h3 className="text-3xl font-[var(--font-poppins)] font-semibold text-[#51367e]">
             Get In Touch
           </h3>
-          <p className="text-sm text-[#5b3fa3] mt-2">
+          <p className="text-sm text-[#51367e] mt-2">
             Dreaming in code? Let’s make it real.
           </p>
         </div>

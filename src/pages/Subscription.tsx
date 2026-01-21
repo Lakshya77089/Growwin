@@ -37,13 +37,16 @@ const Subscription = () => {
             mx-auto
           "
         >
-          Growwin Capital offers a secure and transparent Fix Return Investment
-          Plan designed to provide investors fixed monthly returns. Your
-          investments are professionally managed by experts across diversified
-          asset classes like forex, stocks, crypto, and real estate, ensuring
-          consistent growth and minimized risk. Whether you are a new or
-          experienced investor, Growwin Capital helps you build a stable monthly
-          income with safety, reliability, and complete transparency.
+          Growwin Capital provides a reliable and transparent Fixed Return
+          Investment Plan that delivers steady monthly income to investors. All
+          funds are expertly managed by experienced professionals and
+          strategically diversified across multiple asset classes, including
+          forex, equities, cryptocurrency, and real estate, to promote
+          consistent growth while reducing risk. Designed for both new and
+          seasoned investors, Growwin Capital focuses on safety, stability, and
+          trust. With clear reporting and a disciplined investment approach, we
+          help investors create a dependable monthly income stream backed by
+          reliability and complete transparency.
         </p>
       </div>
       <PlansSection hideHeader={true} />

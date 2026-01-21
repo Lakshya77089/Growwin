@@ -13,7 +13,7 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-6xl font-bold text-[#5b3fa3] mb-6 font-[var(--font-jost)]  font-semibold">
+            <h2 className="text-4xl md:text-6xl font-bold text-[#51367e] mb-6 font-[var(--font-jost)]  font-semibold">
               ABOUT US
             </h2>
             <p className="text-[#2D2D2D] font-[var(--font-poppins)]  font-regular max-w-5xl mx-auto text-sm md:text-base leading-relaxed">
@@ -28,26 +28,26 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-7xl md:text-left text-center mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl  text-center mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-semibold text-[#5b3fa3] mb-6">
+            <h3 className="text-4xl md:text-left md:text-5xl font-[var(--font-jost)] font-semibold text-[#51367e] mb-6">
               Mission
             </h3>
 
-            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-[#2D2D2D]  text-justify font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
               Our mission is to deliver secure, predictable, and professionally
               managed investment solutions that provide stable monthly income to
               our clients.
             </p>
 
-            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-[#2D2D2D] text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed mb-4">
               We focus on disciplined risk management, global diversification
               across forex, stocks, crypto, and real estate, and complete
               transparency.
             </p>
 
-            <p className="text-[#2D2D2D] md:text-center text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed">
+            <p className="text-[#2D2D2D]  text-left font-[var(--font-poppins)] text-sm md:text-base leading-relaxed">
               Growwin Capital is committed to helping investors grow steadily,
               make informed financial decisions, and move toward financial
               freedom through trustworthy and ethical investment practices.
@@ -129,7 +129,7 @@ const AboutUs = () => {
 
           {/* RIGHT: Text */}
           <div>
-            <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-semibold text-[#5b3fa3] mb-6">
+            <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-semibold text-[#51367e] mb-6">
               Vision
             </h3>
 
@@ -145,10 +145,10 @@ const AboutUs = () => {
               strategies, and consistent monthly earnings for every investor.
             </p>
           </div>
-          <div className=" grid grid-cols-2 gap-6">
-            {/* Tall Left Image */}
+          <div className="grid grid-cols-2 gap-6 md:hidden">
+            {/* Left Column */}
             <div>
-              <div className="row-span-3 mb-5 rounded-3xl overflow-hidden">
+              <div className="mb-5 rounded-3xl overflow-hidden">
                 <img
                   src="/vision-1.svg"
                   alt="Vision notebook"
@@ -156,7 +156,6 @@ const AboutUs = () => {
                 />
               </div>
 
-              {/* Top Right Image */}
               <div className="rounded-3xl overflow-hidden">
                 <img
                   src="/vision-2.svg"
@@ -165,7 +164,8 @@ const AboutUs = () => {
                 />
               </div>
             </div>
-            {/* Middle Right Image */}
+
+            {/* Right Column */}
             <div>
               <div className="rounded-3xl mb-5 overflow-hidden">
                 <img
@@ -175,7 +175,6 @@ const AboutUs = () => {
                 />
               </div>
 
-              {/* Bottom Right Image */}
               <div className="rounded-3xl overflow-hidden">
                 <img
                   src="/vision-4.svg"
@@ -190,16 +189,17 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-6 relative mt-20">
           {/* Header */}
           <div className="text-center ">
-            <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-medium text-[#5b3fa3]">
+            <h3 className="text-4xl md:text-5xl font-[var(--font-jost)] font-medium text-[#51367e]">
               Journey
             </h3>
-            <p className="text-[#5b3fa3] mt-2 font-[var(--font-jost)] font-regular text-sm">
+            <p className="text-[#51367e] mt-2 font-[var(--font-jost)] font-regular text-sm">
               Apr 2023 – Dec 2025
             </p>
           </div>
 
           {/* Timeline Container */}
-          <div className="relative h-[1200px]">
+          {/* Desktop */}
+          <div className="hidden lg:block relative h-[1200px] min-w-[1024px] overflow-hidden">
             {/* SVG Dotted Path */}
             <svg
               viewBox="0 0 1100 900"
@@ -214,12 +214,11 @@ const AboutUs = () => {
     H 200
     C 120 380, 120 680, 200 680
     H 800
-    C 880 680, 880 980, 800 980
+    C 880 680, 880 930, 800 940
     H 200
-    C 120 980, 120 1280, 200 1280
-    H 800
+   
   "
-                stroke="#5b3fa3"
+                stroke="#51367e"
                 strokeWidth="2"
                 strokeDasharray="6 9"
               />
@@ -227,52 +226,54 @@ const AboutUs = () => {
 
             {/* Journey Nodes */}
             <JourneyNode
-              x="125px"
-              y="90px"
+              x="11%"
+              y="8%"
               date="Apr 2023 – Sep 2023"
-              users="5,00"
+              users="500"
               investment="$1.0 Million"
             />
 
             <JourneyNode
-              x="890px"
-              y="250px"
+              x="80%"
+              y="22%"
               date="Oct 2023 – Mar 2024"
               users="1,200"
               investment="$2.5 Million"
             />
 
             <JourneyNode
-              x="370px"
-              y="450px"
+              x="34%"
+              y="40%"
               date="Apr 2024 – Sep 2024"
               users="3,000"
               investment="$5 Million"
             />
 
             <JourneyNode
-              x="370px"
-              y="790px"
+              x="34%"
+              y="65%"
               date="Oct 2024 – Mar 2025"
               users="10,000"
               investment="$8.6 Million"
             />
 
             <JourneyNode
-              x="890px"
-              y="920px"
+              x="80%"
+              y="78%"
               date="Apr 2025 – Sep 2025"
               users="18,000"
               investment="$12.0 Million"
             />
+
             <JourneyNode
-              x="125px"
-              y="1100px"
-              date="Apr 2025 – Sep 2025"
+              x="11%"
+              y="83%"
+              date="Oct 2025 – Dec 2025"
               users="25,000"
               investment="$15.0 Million"
             />
           </div>
+          <MobileTimeline/>
         </div>
       </section>
 
@@ -290,32 +291,135 @@ const JourneyNode = ({
   users,
   investment,
 }: {
-  x: string;
-  y: string;
+  x: string; // "12%"
+  y: string; // "8%"
   date: string;
   users: string;
   investment: string;
 }) => {
   return (
     <div
-      className="absolute flex flex-col items-center z-10"
+      className="absolute flex flex-col items-center z-10 
+                 -translate-x-1/2"
       style={{ left: x, top: y }}
     >
       <div className="bg-[#F2F2F2] rounded-xl p-2 mb-2">
-        <img src="/calender.svg" alt="Calendar" className="w-28 h-28" />
+        <img src="/calender.svg" alt="Calendar" className="w-24 h-24" />
       </div>
 
-      {/* Card */}
-      <div className="bg-[#5b3fa3] text-white text-xs rounded-md font-[var(--font-poppins)] font-medium px-3 py-2 mb-2">
+      <div className="bg-[#51367e] text-white text-xs rounded-md font-medium px-3 py-2 mb-2">
         {date}
       </div>
 
-      <p className="text-xs text-[#2D2D2D] font-[var(--font-poppins)] font-medium">
-        Total Users: {users}
-      </p>
-      <p className="text-xs text-[#2D2D2D] font-[var(--font-poppins)] font-medium">
+      <p className="text-xs text-[#2D2D2D] font-medium">Total Users: {users}</p>
+      <p className="text-xs text-[#2D2D2D] font-medium">
         Investments: {investment}
       </p>
+    </div>
+  );
+};
+const MobileTimelineItem = ({
+  date,
+  users,
+  investment,
+  showArrow = true,
+}: {
+  date: string;
+  users: string;
+  investment: string;
+  showArrow?: boolean;
+}) => {
+  return (
+    <div className="relative flex flex-col items-center text-center">
+      {/* Calendar Icon */}
+      <div className="bg-[#F2F2F2] flex flex-col items-center text-center">
+      <div className=" rounded-2xl p-4 -mb-2">
+        <img
+          src="/calender.svg"
+          alt="Calendar"
+          className="w-25 h-25"
+        />
+      </div>
+
+      {/* Date */}
+      <div className="bg-[#51367e] text-white text-sm rounded-lg px-4 py-2 mb-2">
+        {date}
+      </div>
+
+      {/* Info */}
+      <p className="text-sm text-[#2D2D2D] font-medium">
+        Total Users: {users}
+      </p>
+      <p className="text-sm text-[#2D2D2D] font-medium mb-4">
+        Investments: {investment}
+      </p>
+      </div>
+      {/* Arrow */}
+      {showArrow && (
+        <div className="relative flex flex-col items-center mb-4">
+          <span className="h-10 border-dashed border-[#51367e]" />
+          <div className="w-7 h-7 rounded-full bg-[#51367e] flex items-center justify-center text-white rotate-180">
+            ^
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+const MobileTimeline = () => {
+  return (
+    <div className="lg:hidden px-4 py-12">
+      {/* Header */}
+      <div className="text-center mb-10">
+        <h3 className="text-3xl font-medium text-[#51367e]">
+          Journey
+        </h3>
+        <p className="text-sm text-[#51367e]">
+          Apr 2023 – Dec 2025
+        </p>
+      </div>
+
+      {/* Vertical Line */}
+      <div className="relative flex flex-col items-center">
+        <div className="absolute top-0 bottom-0 border-l-2 border-dashed border-[#51367e]" />
+
+        <MobileTimelineItem
+          date="Apr 2023 – Sep 2023"
+          users="500"
+          investment="$1.0 Million"
+        />
+
+        <MobileTimelineItem
+          date="Oct 2023 – Mar 2024"
+          users="1,200"
+          investment="$2.5 Million"
+        />
+
+        <MobileTimelineItem
+          date="Apr 2024 – Sep 2024"
+          users="3,000"
+          investment="$5 Million"
+        />
+
+        <MobileTimelineItem
+          date="Oct 2024 – Mar 2025"
+          users="10,000"
+          investment="$8.6 Million"
+        />
+
+        <MobileTimelineItem
+          date="Apr 2025 – Sep 2025"
+          users="18,000"
+          investment="$12.0 Million"
+        />
+
+        <MobileTimelineItem
+          date="Oct 2025 – Dec 2025"
+          users="25,000"
+          investment="$15.0 Million"
+          showArrow={false}
+        />
+      </div>
     </div>
   );
 };

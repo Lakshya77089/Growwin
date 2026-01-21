@@ -33,7 +33,7 @@ const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
         {!hideHeader && (
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-[var(--font-poppins)] font-medium text-[#2D2D2D]">
-              Our <span className="text-[#5b3fa3]">Plans</span>
+              Our <span className="text-[#51367e]">Plans</span>
             </h2>
 
             <p className="mt-4 text-gray-500 max-w-xl mx-auto font-[var(--font-poppins)]">

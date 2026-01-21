@@ -7,7 +7,7 @@ const Section6 = () => {
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            Meet Our <span className="text-[#5b3fa3]">Team</span>
+            Meet Our <span className="text-[#51367e]">Team</span>
           </h2>
         </div>
 

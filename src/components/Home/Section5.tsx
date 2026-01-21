@@ -33,7 +33,7 @@ const Section5 = () => {
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            Why Choose <span className="text-[#5b3fa3]">Growwin Capital?</span>
+            Why Choose <span className="text-[#51367e]">Growwin Capital?</span>
           </h2>
         </div>
 
@@ -61,7 +61,7 @@ const Section5 = () => {
               <div
                 className="
       absolute inset-0
-      bg-[radial-gradient(120%_120%_at_0%_0%,#5b3fa3_0%,#4b347a_70%)]
+      bg-[radial-gradient(120%_120%_at_0%_0%,#51367e_0%,#4b347a_70%)]
       opacity-0
       transition-opacity duration-300
       group-hover:opacity-100

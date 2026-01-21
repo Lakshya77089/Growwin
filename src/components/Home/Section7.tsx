@@ -37,7 +37,7 @@ const Section7 = () => {
         {/* ===== Heading ===== */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-poppins-bold text-[#2D2D2D]">
-            Meet Our <span className="text-[#5b3fa3]">Team</span>
+            Our Core<span className="text-[#51367e]"> Trading Segments</span>
           </h2>
         </div>
 
@@ -57,7 +57,7 @@ const Section7 = () => {
               {/* TEXT */}
               <div className="mt-6 font-[var(--font-poppins)]">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[#5b3fa3] font-semibold text-lg">
+                  <span className="text-[#51367e] font-semibold text-lg">
                     {item.id}
                   </span>
                   <span className="text-gray-400">—</span>
@@ -102,7 +102,7 @@ const Section7 = () => {
                 {/* TEXT */}
                 <div className="mt-8 max-w-[520px] font-[var(--font-poppins)]">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[#5b3fa3] font-semibold text-lg">
+                    <span className="text-[#51367e] font-semibold text-lg">
                       {item.id}
                     </span>
                     <span className="text-gray-400">—</span>

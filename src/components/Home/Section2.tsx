@@ -4,39 +4,37 @@ const Section2 = () => {
   return (
     <section className="relative w-full py-20 bg-[#F2F2F2] md:mt-0 -mt-50 [@media(min-width:768px)_and_(max-width:1023px)]:-mt-72 md:z-0 z-[20]">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             Let&apos;s start
           </h2>
           <h2 className="text-4xl md:text-6xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            with <span className="text-[#5b3fa3]">Growwin Capital</span>
+            with <span className="text-[#51367e]">Growwin Capital</span>
           </h2>
         </div>
 
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-
           {/* Left Text */}
           <div className="text-gray-600 text-lg leading-relaxed font-[var(--font-poppins)]  font-medium space-y-4 order-2 lg:order-1">
             <p className="font-poppins-semibold text-justify">
-              <span className="font-bold">Our company</span> stands at the forefront of the investment industry,
-              offering a unique blend of multi-level marketing and forex trading
-              to deliver unmatched returns.
-              We provide three investment plans—Basic, Classic, and
-              Platinum—each designed to offer high returns tailored to the
-              investor&apos;s needs.
-              Users can invest in our platform with confidence, knowing that
-              their funds are managed by a team of seasoned traders and
-              financial analysts who leverage advanced trading strategies
-              and market insights.
-              We reinvest the money entrusted to us into the forex market,
-              known for its potential for high returns, ensuring that our
-              clients receive substantial and consistent earnings.
-              Our company is dedicated to making investing accessible,
-              profitable, and secure for everyone, fostering a community
-              of investors who grow and thrive together.
+              <span className="font-bold">Growwin Capital</span> provides a
+              secure, transparent, and professionally managed Fixed Return
+              Investment Plan aimed at delivering stable and predictable monthly
+              income to investors. Our investment approach focuses on
+              consistency, safety, and long-term financial growth. Funds
+              entrusted to us are carefully allocated across diversified asset
+              classes including forex, equities, cryptocurrency, and real estate
+              to balance risk and optimize returns. Every investment is handled
+              by an experienced team of financial professionals who apply
+              advanced strategies, in-depth market analysis, and disciplined
+              risk management practices. Growwin Capital is designed to support
+              both new and experienced investors by offering reliable returns,
+              clear reporting, and complete transparency at every step. Our goal
+              is to make investing simple, dependable, and accessible while
+              helping investors build a strong and sustainable monthly income
+              stream with confidence and peace of mind.
             </p>
           </div>
 
@@ -48,7 +46,6 @@ const Section2 = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
         </div>
       </div>
     </section>

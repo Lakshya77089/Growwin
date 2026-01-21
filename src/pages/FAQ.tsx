@@ -90,7 +90,7 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-[var(--font-jost)]  font-semibold text-[#5b3fa3] mb-4">
+            <h2 className="text-4xl md:text-6xl font-[var(--font-jost)]  font-semibold text-[#51367e] mb-4">
               FAQ
             </h2>
             <p className="text-[#2D2D2D] max-w-2xl mx-auto text-sm md:text-base">

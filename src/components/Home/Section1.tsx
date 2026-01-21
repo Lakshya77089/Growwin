@@ -1,4 +1,8 @@
 import heroBg from "/image.svg";
+const handleDownload = () => {
+  window.location.href =
+    "https://apk.growwincapital.com/growwin.apk";
+};
 
 const Section1: React.FC = () => {
   return (
@@ -41,6 +45,7 @@ const Section1: React.FC = () => {
           </div>
 
           <button
+            onClick={handleDownload}
             className="
               lg:mt-3
               mt-10

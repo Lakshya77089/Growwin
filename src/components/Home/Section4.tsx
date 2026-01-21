@@ -11,7 +11,7 @@ const Section4 = () => {
         {/* ===== Heading ===== */}
         <div className="text-center mb-28">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            How <span className="text-[#5b3fa3]">Growwin Capital</span>
+            How <span className="text-[#51367e]">Growwin Capital</span>
           </h2>
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             work&apos;s
@@ -37,7 +37,7 @@ const Section4 = () => {
               V 620
               H 860
             "
-            stroke="#5b3fa3"
+            stroke="#51367e"
             strokeWidth="2"
             strokeDasharray="6 6"
             strokeLinecap="round"
@@ -68,7 +68,7 @@ const Section4 = () => {
           <div className="inline-flex flex-col mt-33 items-start">
             {/* STEP BADGE — MASK HERE */}
             <div className="bg-[#F2F2F2] px-2 py-1 rounded-sm mb-2">
-              <span className="bg-[#5b3fa3] font-[var(--font-poppins)]  font-medium text-white text-lg px-3 py-1 rounded-sm">
+              <span className="bg-[#51367e] font-[var(--font-poppins)]  font-medium text-white text-lg px-3 py-1 rounded-sm">
                 Step 1
               </span>
             </div>
@@ -88,7 +88,7 @@ const Section4 = () => {
         {/* ===== STEP 2 ===== */}
         <div className="absolute top-[350px] right-[5px] w-[450px] text-right ">
           <div className="mr-43">
-            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#5b3fa3] text-white text-lg px-3 py-1 rounded-sm mb-2">
+            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#51367e] text-white text-lg px-3 py-1 rounded-sm mb-2">
               Step 2
             </span>
             <h4 className="font-poppins-semibold text-lg mb-1 font-[var(--font-poppins)]  font-medium">
@@ -108,7 +108,7 @@ const Section4 = () => {
         <div className="absolute top-[470px] left-1/2 -translate-x-1/2 w-[360px] flex flex-col items-center ">
           {/* TEXT */}
           <div className="text-center w-[220px] ">
-            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#5b3fa3] text-white text-lg px-3 py-1 mb-2 rounded-lg">
+            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#51367e] text-white text-lg px-3 py-1 mb-2 rounded-lg">
               Step 3
             </span>
 
@@ -141,7 +141,7 @@ const Section4 = () => {
           <img src={profitsSvg} alt="Monthly profits" />
 
           <div className="flex flex-col">
-            <span className="inline-block bg-[#5b3fa3] font-[var(--font-poppins)]  font-medium text-white text-lg px-3 py-1 rounded-lg mb-2 w-fit">
+            <span className="inline-block bg-[#51367e] font-[var(--font-poppins)]  font-medium text-white text-lg px-3 py-1 rounded-lg mb-2 w-fit">
               Step 4
             </span>
 
@@ -158,7 +158,7 @@ const Section4 = () => {
         {/* ===== STEP 5 ===== */}
         <div className="absolute top-[860px] right-[80px] w-[340px] text-right">
           <div className="">
-            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#5b3fa3] text-white text-lg px-3 py-1 rounded-lg mb-2">
+            <span className="inline-block font-[var(--font-poppins)]  font-medium bg-[#51367e] text-white text-lg px-3 py-1 rounded-lg mb-2">
               Step 5
             </span>
             <h4 className="font-[var(--font-poppins)]  font-medium text-lg mb-1">
@@ -193,7 +193,7 @@ const Section4 = () => {
       {/* <div className=" max-w-7xl mx-auto px-6 relative min-h-[1150px]">
         <div className="text-center mb-28">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            How <span className="text-[#5b3fa3]">Growwin Capital</span>
+            How <span className="text-[#51367e]">Growwin Capital</span>
           </h2>
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             work&apos;s
@@ -205,7 +205,7 @@ const Section4 = () => {
       <div className="relative block lg:hidden px-4 py-16 bg-[#F2F2F2]">
         <div className="text-center md:mb-28 mb-10">
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
-            How <span className="text-[#5b3fa3]">Growwin Capital</span>
+            How <span className="text-[#51367e]">Growwin Capital</span>
           </h2>
           <h2 className="text-5xl font-[var(--font-poppins)]  font-medium text-[#2D2D2D]">
             work&apos;s
@@ -237,7 +237,7 @@ const Section4 = () => {
       H 180
       V 1300
     "
-            stroke="#5b3fa3"
+            stroke="#51367e"
             strokeWidth="2"
             strokeDasharray="6 6"
             strokeLinecap="round"
@@ -254,7 +254,7 @@ const Section4 = () => {
 
             <div className="text-center relative">
               {/* STEP BADGE */}
-              <span className="relative inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+              <span className="relative inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 1{/* HORIZONTAL DOTTED LINE */}
                 <span
                   className="
@@ -265,7 +265,7 @@ const Section4 = () => {
           w-17
           border-t-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
                 />
               </span>
@@ -278,7 +278,7 @@ const Section4 = () => {
           h-21
           border-l-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
               <span
@@ -292,7 +292,7 @@ const Section4 = () => {
     border-t-2
     border-r-2
     border-dashed
-    border-[#5b3fa3]
+    border-[#51367e]
     rounded-tr-full
   "
 />
@@ -306,7 +306,7 @@ const Section4 = () => {
           w-34
           border-t-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
               <span
@@ -318,7 +318,7 @@ const Section4 = () => {
           h-15
           border-l-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
               <h4 className="text-lg font-medium">Create an Account</h4>
@@ -333,7 +333,7 @@ const Section4 = () => {
             <img src={addFundsSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center md:w-full w-[40%]">
-              <span className="relative inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+              <span className="relative inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 2{/* HORIZONTAL DOTTED LINE */}
                 <span
                   className="
@@ -344,7 +344,7 @@ const Section4 = () => {
           w-22
           border-t-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
                 />
                 <span
@@ -356,7 +356,7 @@ const Section4 = () => {
           h-50
           border-l-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
                <span
@@ -368,7 +368,7 @@ const Section4 = () => {
           w-60
           border-t-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
               <span
@@ -380,7 +380,7 @@ const Section4 = () => {
           h-70
           border-l-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
               />
               <span
@@ -392,7 +392,7 @@ const Section4 = () => {
           w-16
           border-t-2
           border-dashed
-          border-[#5b3fa3]
+          border-[#51367e]
         "
                 />
               </span>
@@ -408,7 +408,7 @@ const Section4 = () => {
           <div className="flex flex-col items-center text-center ">
             <img src={manageFundsSvg} className="w-[250px] mt-4 rounded-xl" />
             <div className="text-center w-[60%]">
-              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+              <span className="inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 3
               </span>
               <h4 className="text-lg font-medium">We Manage Your Funds</h4>
@@ -432,7 +432,7 @@ const Section4 = () => {
                   bg-gradient-to-t from-white/20 to-transparent"
             />
             <div className="text-center w-[60%]">
-              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+              <span className="inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 4
               </span>
               <h4 className="text-lg font-medium">Receive Monthly Profits</h4>
@@ -447,7 +447,7 @@ const Section4 = () => {
             <img src={withdrawSvg} className="w-[300px] rounded-xl" />
 
             <div className="text-center">
-              <span className="inline-block bg-[#5b3fa3] text-white text-sm px-5 py-2 rounded-md mb-2">
+              <span className="inline-block bg-[#51367e] text-white text-sm px-5 py-2 rounded-md mb-2">
                 Step 5
               </span>
               <h4 className="text-lg font-medium">Withdraw Anytime</h4>

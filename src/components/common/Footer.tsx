@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="w-full py-20 bg-[#F2F2F2] ">
       <div className="max-w-7xl mx-auto px-6">
         {/* FOOTER CARD */}
-        <div className="bg-gradient-to-br from-[#5b3fa3] to-[#3f2b73] rounded-[36px] px-12 py-14 text-white">
+        <div className="bg-gradient-to-br from-[#51367e] to-[#3f2b73] rounded-[36px] px-12 py-14 text-white">
           {/* TOP GRID */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* LEFT */}
