@@ -6,7 +6,7 @@ const handleDownload = () => {
 
 const Section1: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen lg:mt-20 [@media(min-width:390px)_and_(max-width:430px)]:-mt-50 -mt-30  overflow-hidden bg-[#F2F2F2]">
+    <section className="relative w-full min-h-screen lg:mt-20 [@media(min-width:390px)_and_(max-width:430px)]:-mt-30 -mt-30  overflow-hidden bg-[#F2F2F2]">
       {/* Background Image (IMG behaving like background) */}
       <img
         src={heroBg}
