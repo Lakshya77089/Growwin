@@ -46,7 +46,7 @@ const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
           <PlanCard title="Basic" price="5.5%" features={basicPlanFeatures}/>
           <PlanCard title="Classic" price="6.5%"  variant="gradient" features={classicPlanFeatures}/>
-          <PlanCard title="Platinum" price="12%" popular features={premiumPlanFeatures}/>
+          <PlanCard title="Platinum" price="12%"  features={premiumPlanFeatures}/>
         </div>
 
       </div>

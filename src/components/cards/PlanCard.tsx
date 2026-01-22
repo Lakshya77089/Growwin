@@ -23,6 +23,8 @@ const PlanCard = ({
       className={`
         relative
         rounded-[36px]
+        border-[0.5]
+        border-white
         px-10
         py-12
         bg-[#e2dfe7]
@@ -57,7 +59,7 @@ const PlanCard = ({
       {/* CONTENT */}
       <div className="relative z-10">
         {/* Title */}
-        <h3 className="text-2xl font-[var(--font-poppins)] font-semibold text-[#2D2D2D] mb-6 text-center">
+        <h3 className="text-3xl font-[var(--font-poppins)] font-bold text-[#2D2D2D] mb-6 text-center">
           {title}
         </h3>
 
@@ -78,15 +80,20 @@ const PlanCard = ({
 
           <div className="space-y-3 text-sm text-gray-600 font-[var(--font-poppins)]">
             {features.map((feature, index) => (
-              <div
-  key={index}
-  className="grid grid-cols-[auto_1fr_auto] gap-2"
->
-  <span className="text-left">{feature.label}</span>
-  <span className="text-center">:</span>
-  <span className="text-right">{feature.value}</span>
-</div>
+              <div key={index} className="flex items-center">
+                {/* Label */}
+                <span className="w-[55%] text-left whitespace-nowrap">
+                  {feature.label}
+                </span>
 
+                {/* Colon */}
+                <span className="w-[5%] text-center">:</span>
+
+                {/* Value */}
+                <span className="w-[40%]   whitespace-nowrap">
+                  {feature.value}
+                </span>
+              </div>
             ))}
           </div>
         </div>
