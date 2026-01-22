@@ -1,4 +1,4 @@
-import heroBg from "/image3.png";
+import heroBg from "/fimage.png";
 const handleDownload = () => {
   window.location.href = "https://apk.growwincapital.com/growwin.apk";
 };
