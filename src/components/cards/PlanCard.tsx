@@ -78,10 +78,15 @@ const PlanCard = ({
 
           <div className="space-y-3 text-sm text-gray-600 font-[var(--font-poppins)]">
             {features.map((feature, index) => (
-              <div key={index} className="flex justify-between">
-                <span>{feature.label}</span>
-                <span>: {feature.value}</span>
-              </div>
+              <div
+  key={index}
+  className="grid grid-cols-[auto_1fr_auto] gap-2"
+>
+  <span className="text-left">{feature.label}</span>
+  <span className="text-center">:</span>
+  <span className="text-right">{feature.value}</span>
+</div>
+
             ))}
           </div>
         </div>

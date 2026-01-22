@@ -15,7 +15,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-[#F2F2F2] lg:bg-transparent">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-[#F2F2F2] lg:bg-transparent h-[80px] lg:h-[96px]">
       <div className="mx-4 lg:mx-10">
         <div className="flex items-center justify-between px-6 lg:py-4 py-6">
 

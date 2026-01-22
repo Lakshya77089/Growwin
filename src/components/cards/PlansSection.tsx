@@ -5,24 +5,24 @@ interface PlansSectionProps {
 }
 const premiumPlanFeatures = [
   // { label: "Monthly Return", value: "+12%" },
-  { label: "Investment Range", value: "500 USDT & Above" },
-  { label: "Capital Back", value: "No" },
+  { label: "Investment", value: "$500 +" },
+  { label: "Capital Return", value: "No" },
   // { label: "Bi-Weekly Return", value: "6%" },
   { label: "Maximum Return", value: "240%" },
 ];
 const basicPlanFeatures = [
   // { label: "Monthly Return", value: "+5.5%" },
-  { label: "Investment Range", value: "500-2,000 USDT" },
-  { label: "Capital Back", value: "Yes" },
+  { label: "Investment", value: "$500-$2,000" },
+  { label: "Capital Return", value: "Yes" },
   // { label: "Bi-Weekly Return", value: "2.75%" },
-  { label: "Maximum Return", value: "66%" },
+  { label: "Yearly Return", value: "66%" },
 ];
 const classicPlanFeatures = [
   // { label: "Monthly Return", value: "+6.5%" },
-  { label: "Investment Range", value: "2000-Above USDT" },
-  { label: "Capital Back", value: "Yes" },
+  { label: "Investment", value: "$2000 +" },
+  { label: "Capital Return", value: "Yes" },
   // { label: "Bi-Weekly Return", value: "3.25%" },
-  { label: "Maximum Return", value: "78%" },
+  { label: "Yearly Return", value: "78%" },
 ];
 
 const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
@@ -44,9 +44,9 @@ const PlansSection = ({ hideHeader = false }: PlansSectionProps) => {
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
-          <PlanCard title="Basic" price="+5.5%" features={basicPlanFeatures}/>
-          <PlanCard title="Classic" price="+6.5%"  variant="gradient" features={classicPlanFeatures}/>
-          <PlanCard title="Platinum" price="+12%" popular features={premiumPlanFeatures}/>
+          <PlanCard title="Basic" price="5.5%" features={basicPlanFeatures}/>
+          <PlanCard title="Classic" price="6.5%"  variant="gradient" features={classicPlanFeatures}/>
+          <PlanCard title="Platinum" price="12%" popular features={premiumPlanFeatures}/>
         </div>
 
       </div>
