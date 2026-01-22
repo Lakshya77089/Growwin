@@ -370,14 +370,7 @@ const MobileTimeline = () => {
   return (
     <div className="lg:hidden px-4 py-12">
       {/* Header */}
-      <div className="text-center mb-10">
-        <h3 className="text-3xl font-medium text-[#51367e]">
-          Journey
-        </h3>
-        <p className="text-sm text-[#51367e]">
-          Apr 2023 – Dec 2025
-        </p>
-      </div>
+    
 
       {/* Vertical Line */}
       <div className="relative flex flex-col items-center">
