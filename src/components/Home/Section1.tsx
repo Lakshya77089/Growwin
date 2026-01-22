@@ -1,7 +1,6 @@
-import heroBg from "/image7.svg";
+import heroBg from "/image3.png";
 const handleDownload = () => {
-  window.location.href =
-    "https://apk.growwincapital.com/growwin.apk";
+  window.location.href = "https://apk.growwincapital.com/growwin.apk";
 };
 
 const Section1: React.FC = () => {
@@ -12,16 +11,13 @@ const Section1: React.FC = () => {
         src={heroBg}
         alt="Growwin background"
         className="
-          absolute inset-0
-          w-full h-full
-          object-center
-          z-0
-          lg:object-cover
-          lg:scale-100
-          scale-150
-          pointer-events-none
-
-        "
+    absolute inset-0
+    w-full h-full
+    object-contain
+    object-center
+    z-0
+    pointer-events-none
+  "
       />
 
       {/* Content Wrapper */}
