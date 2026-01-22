@@ -1,4 +1,4 @@
-import heroBg from "/image.svg";
+import heroBg from "/image4.svg";
 const handleDownload = () => {
   window.location.href =
     "https://apk.growwincapital.com/growwin.apk";
@@ -20,8 +20,7 @@ const Section1: React.FC = () => {
           lg:scale-100
           scale-150
           pointer-events-none
-          brightness-200
-      contrast-90
+
         "
       />
 
