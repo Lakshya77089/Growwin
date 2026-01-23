@@ -1,6 +1,6 @@
 const features = [
   {
-    title: "Fixed Monthly Returns",
+    title: "Targeted Monthly Returns",
     desc: "Earn consistent monthly income without stress.",
   },
   {
