@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import heroBg from "/fimage.png";
 const handleDownload = () => {
   window.location.href = "https://apk.growwincapital.com/growwin.apk";
@@ -22,7 +23,12 @@ const Section1: React.FC = () => {
 
       {/* Content Wrapper */}
       <div className="relative z-10 min-h-screen flex items-center justify-center">
-        <div className="text-center px-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-center px-6"
+        >
           <h1 className="text-4xl lg:text-7xl font-[var(--font-jost)]  font-semibold text-white-offset tracking-wide ">
             GROWWIN CAPITAL
           </h1>
@@ -54,11 +60,12 @@ const Section1: React.FC = () => {
               border-1
               border-white
               active:scale-95
+              shadow-lg shadow-purple-900/20
             "
           >
             Download Apk
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -55,6 +55,7 @@ const Section5 = () => {
     shadow-[0_20px_60px_rgba(0,0,0,0.06)]
     transition-all duration-300
     hover:shadow-[0_25px_80px_rgba(91,63,163,0.25)]
+    hover:scale-105
   "
             >
               {/* HOVER BACKGROUND LAYER */}

@@ -17,13 +17,13 @@ const BigBlogCard: React.FC<BigBlogCardProps> = ({
     badge,
 }) => {
     return (
-        <div className="bg-[#E7E4EF] rounded-[60px] p-8 flex flex-col h-full relative group shadow-[0_15px_35px_rgba(0,0,0,0.05)] border border-white/20">
+        <div className="bg-[#E7E4EF] rounded-[60px] p-8 flex flex-col h-full relative group shadow-[0_15px_35px_rgba(0,0,0,0.05)] border border-white/20 cursor-pointer hover:scale-[1.02] transition-transform duration-300">
             {/* Image Container */}
             <div className="relative rounded-[45px] overflow-hidden mb-8 aspect-[1.4/1]">
                 <img
                     src={image}
                     alt={title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {badge && (
                     <div className="absolute top-[50%] right-[-24px] -translate-y-1/2 bg-[#51367E] text-white px-6 py-3 rounded-2xl text-[14px] font-medium z-20 shadow-xl">
@@ -46,7 +46,7 @@ const BigBlogCard: React.FC<BigBlogCardProps> = ({
                     {excerpt}
                 </p>
                 <div className="mt-auto text-center">
-                    <button className="text-[#51367E] font-bold text-[18px] hover:opacity-75 transition-all">
+                    <button className="text-[#51367E] font-bold text-[18px] hover:opacity-75 transition-all cursor-pointer">
                         Read More
                     </button>
                 </div>

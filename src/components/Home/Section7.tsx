@@ -44,13 +44,13 @@ const Section7 = () => {
         {/* ================= MOBILE STACK (NO CAROUSEL) ================= */}
         <div className=" block md:hidden space-y-16">
           {carouselData.map((item) => (
-            <div key={item.id}>
+            <div key={item.id} className="group">
               {/* IMAGE */}
               <div className="rounded-3xl overflow-hidden shadow-lg">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-[220px] object-cover"
+                  className="w-full h-[220px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
@@ -89,13 +89,13 @@ const Section7 = () => {
             "
           >
             {carouselData.map((item) => (
-              <div key={item.id} className="min-w-[520px]">
+              <div key={item.id} className="min-w-[520px] group">
                 {/* IMAGE CARD */}
                 <div className="rounded-[36px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[300px] object-cover"
+                    className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
 

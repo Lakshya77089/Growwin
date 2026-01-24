@@ -107,19 +107,19 @@ const FAQ = () => {
               return (
                 <div
                   key={index}
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
                   className={`
                   rounded-2xl border border-white/60
                   backdrop-blur-xl transition-all duration-300
-                  ${
-                    isOpen
+                  cursor-pointer hover:scale-[1.02]
+                  ${isOpen
                       ? "bg-[#F2F2F2]/20 p-8 shadow-2xl"
-                      : "bg-[#F2F2F2]/40 p-5"
-                  }
+                      : "bg-[#F2F2F2]/40 p-5 shadow-lg"
+                    }
                 `}
                 >
                   {/* Question */}
-                  <button
-                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                  <div
                     className="w-full flex items-center justify-between text-left"
                   >
                     <span className="text-lg font-medium text-gray-800">
@@ -129,17 +129,16 @@ const FAQ = () => {
                     <span className="text-2xl text-gray-700 transition-transform duration-300">
                       {isOpen ? "×" : "+"}
                     </span>
-                  </button>
+                  </div>
 
                   {/* Smooth Answer */}
                   <div
                     className={`
                     overflow-hidden transition-all duration-500 ease-in-out
-                    ${
-                      isOpen
+                    ${isOpen
                         ? "max-h-40 opacity-100 mt-6"
                         : "max-h-0 opacity-0 mt-0"
-                    }
+                      }
                   `}
                   >
                     <p className="text-gray-600 leading-relaxed text-sm md:text-base">

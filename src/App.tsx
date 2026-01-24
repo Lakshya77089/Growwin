@@ -7,11 +7,13 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import DraggableSupport from "./components/common/DraggableSupport";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
     // <BrowserRouter>
     <>
+      <ScrollToTop />
       <Navbar />
       <main >
         <Routes>

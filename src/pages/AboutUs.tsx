@@ -57,29 +57,29 @@ const AboutUs = () => {
           {/* Right Images */}
           <div className="grid grid-cols-2 gap-6">
             {/* Large Image */}
-            <div className="row-span-2 mt-20 rounded-3xl overflow-hidden">
+            <div className="row-span-2 mt-20 rounded-3xl overflow-hidden group">
               <img
                 src="/mission-1.svg"
                 alt="Investment discussion"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
 
             {/* Top Right Image */}
-            <div className="rounded-3xl overflow-hidden">
+            <div className="rounded-3xl overflow-hidden group">
               <img
                 src="/mission-2.svg"
                 alt="Work setup"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
 
             {/* Bottom Right Image */}
-            <div className="rounded-3xl overflow-hidden">
+            <div className="rounded-3xl overflow-hidden group">
               <img
                 src="/mission-3.svg"
                 alt="Team collaboration"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
           </div>
@@ -89,39 +89,39 @@ const AboutUs = () => {
           <div className="hidden lg:grid grid grid-cols-2 gap-6">
             {/* Tall Left Image */}
             <div>
-              <div className="row-span-3 mb-5 rounded-3xl overflow-hidden">
+              <div className="row-span-3 mb-5 rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-1.svg"
                   alt="Vision notebook"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
               {/* Top Right Image */}
-              <div className="rounded-3xl overflow-hidden">
+              <div className="rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-2.svg"
                   alt="Building"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
             {/* Middle Right Image */}
             <div>
-              <div className="rounded-3xl mb-5 overflow-hidden">
+              <div className="rounded-3xl mb-5 overflow-hidden group">
                 <img
                   src="/vision-3.svg"
                   alt="Target focus"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
               {/* Bottom Right Image */}
-              <div className="rounded-3xl overflow-hidden">
+              <div className="rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-4.svg"
                   alt="Team collaboration"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
@@ -148,38 +148,38 @@ const AboutUs = () => {
           <div className="grid grid-cols-2 gap-6 md:hidden">
             {/* Left Column */}
             <div>
-              <div className="mb-5 rounded-3xl overflow-hidden">
+              <div className="mb-5 rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-1.svg"
                   alt="Vision notebook"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
-              <div className="rounded-3xl overflow-hidden">
+              <div className="rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-2.svg"
                   alt="Building"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
 
             {/* Right Column */}
             <div>
-              <div className="rounded-3xl mb-5 overflow-hidden">
+              <div className="rounded-3xl mb-5 overflow-hidden group">
                 <img
                   src="/vision-3.svg"
                   alt="Target focus"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
-              <div className="rounded-3xl overflow-hidden">
+              <div className="rounded-3xl overflow-hidden group">
                 <img
                   src="/vision-4.svg"
                   alt="Team collaboration"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </div>
@@ -273,7 +273,7 @@ const AboutUs = () => {
               investment="$15.0 Million"
             />
           </div>
-          <MobileTimeline/>
+          <MobileTimeline />
         </div>
       </section>
 
@@ -333,26 +333,26 @@ const MobileTimelineItem = ({
     <div className="relative flex flex-col items-center text-center">
       {/* Calendar Icon */}
       <div className="bg-[#F2F2F2] flex flex-col items-center text-center">
-      <div className=" rounded-2xl p-4 -mb-2">
-        <img
-          src="/calender.svg"
-          alt="Calendar"
-          className="w-25 h-25"
-        />
-      </div>
+        <div className="rounded-2xl p-4 -mb-2">
+          <img
+            src="/calender.svg"
+            alt="Calendar"
+            className="w-25 h-25"
+          />
+        </div>
 
-      {/* Date */}
-      <div className="bg-[#51367e] text-white text-sm rounded-lg px-4 py-2 mb-2">
-        {date}
-      </div>
+        {/* Date */}
+        <div className="bg-[#51367e] text-white text-sm rounded-lg px-4 py-2 mb-2">
+          {date}
+        </div>
 
-      {/* Info */}
-      <p className="text-sm text-[#2D2D2D] font-medium">
-        Total Users: {users}
-      </p>
-      <p className="text-sm text-[#2D2D2D] font-medium mb-4">
-        Investments: {investment}
-      </p>
+        {/* Info */}
+        <p className="text-sm text-[#2D2D2D] font-medium">
+          Total Users: {users}
+        </p>
+        <p className="text-sm text-[#2D2D2D] font-medium mb-4">
+          Investments: {investment}
+        </p>
       </div>
       {/* Arrow */}
       {showArrow && (
@@ -370,7 +370,7 @@ const MobileTimeline = () => {
   return (
     <div className="lg:hidden px-4 py-12">
       {/* Header */}
-    
+
 
       {/* Vertical Line */}
       <div className="relative flex flex-col items-center">

@@ -14,11 +14,11 @@ const Section6 = () => {
         {/* ===== Content ===== */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           {/* IMAGE */}
-          <div className="flex justify-center">
+          <div className="flex justify-center group overflow-hidden rounded-3xl">
             <img
               src={teamImg}
               alt="Growwin Capital Team"
-              className="w-full max-w-[520px]"
+              className="w-full max-w-[520px] transition-transform duration-700 group-hover:scale-110"
             />
           </div>
 
@@ -31,16 +31,16 @@ const Section6 = () => {
               commodities, and cryptocurrency markets. We follow a
               research-based, data-driven, and diversified investment approach
               designed to deliver stable and consistent returns.
-        
 
-    
+
+
               Our risk management team continuously tracks global markets to
               ensure controlled exposure and capital safety. Supported by
               advanced tools, technical analysis, and AI-powered insights, our
               analysts capture opportunities across international markets.
-        
 
-     
+
+
               With a strong focus on transparency, ethics, and personalized
               strategies, our team manages every portfolio with discipline and
               long-term vision.

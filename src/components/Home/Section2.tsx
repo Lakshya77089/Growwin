@@ -39,11 +39,11 @@ const Section2 = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative w-full h-[380px] md:h-full overflow-hidden rounded-[28px] order-1 lg:order-2">
+          <div className="relative w-full h-[380px] md:h-full overflow-hidden rounded-[28px] order-1 lg:order-2 group">
             <img
               src={officeImg}
               alt="Office workspace"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
         </div>

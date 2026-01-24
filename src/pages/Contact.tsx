@@ -72,29 +72,29 @@ const Contact = () => {
                 {/* Token Raise */}
                 <a
                   href="https://site.growwincapital.com/help"
-                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer group"
                 >
-                  <img src={Globe} alt="Ticket Raise" className="w-10 h-10" />
+                  <img src={Globe} alt="Ticket Raise" className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
 
                   <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
                     Ticket Raise
                   </p>
 
-                  <p className="text-sm text-gray-500">Click to Raise</p>
+                  <p className="text-sm text-gray-500 transition-colors group-hover:text-[#51367E]">Click to Raise</p>
                 </a>
 
                 {/* Email */}
                 <a
                   href="mailto:info@growwincapital.com"
-                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer group"
                 >
-                  <img src={Mail} alt="Email" className="w-10 h-10" />
+                  <img src={Mail} alt="Email" className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
 
                   <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
                     Email Address
                   </p>
 
-                  <p className="text-sm text-[#808080] font-[var(--font-poppins)] font-regular">
+                  <p className="text-sm text-[#808080] font-[var(--font-poppins)] font-regular transition-colors group-hover:text-[#51367E]">
                     info@growwincapital.com
                   </p>
                 </a>
@@ -102,19 +102,19 @@ const Contact = () => {
                 {/* Live Chat */}
                 <a
                   href="https://site.growwincapital.com/help"
-                  className="flex flex-col items-center text-center gap-3 cursor-pointer"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer group"
                 >
                   <img
                     src={MessageCircle}
                     alt="Live Chat"
-                    className="w-10 h-10"
+                    className="w-10 h-10 transition-transform duration-300 group-hover:scale-110"
                   />
 
                   <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
                     Live Chat
                   </p>
 
-                  <p className="text-sm font-[var(--font-poppins)] font-regular text-[#808080]">
+                  <p className="text-sm font-[var(--font-poppins)] font-regular text-[#808080] transition-colors group-hover:text-[#51367E]">
                     Open
                   </p>
                 </a>

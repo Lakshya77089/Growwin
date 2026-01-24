@@ -1,3 +1,5 @@
+import { useState, useRef } from "react";
+
 type PlanFeature = {
   label: string;
   value: string;
@@ -18,8 +20,22 @@ const PlanCard = ({
   popular = false,
   variant = "solid",
 }: PlanCardProps) => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    setMousePos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
   return (
     <div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
       className={`
         relative
         rounded-[36px]
@@ -30,9 +46,21 @@ const PlanCard = ({
         bg-[#e2dfe7]
         shadow-[0_25px_60px_rgba(0,0,0,0.10)]
         overflow-hidden
+        transition-all
+        duration-500
+        group
+        hover:scale-[1.02]
         ${popular ? "scale-[1.04]" : ""}
       `}
     >
+      {/* Mouse-Following Radial Gradient Hover Effect */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+        style={{
+          background: `radial-gradient(500px circle at ${mousePos.x}px ${mousePos.y}px, rgba(148, 27, 185, 0.2), transparent 70%)`
+        }}
+      />
+
       {/* RADIAL GLOW — ONLY FOR GRADIENT VARIANT */}
       {variant === "gradient" && (
         <div
@@ -45,6 +73,7 @@ const PlanCard = ({
             rounded-full
             bg-[#4b2e83]/30
             blur-[140px]
+            pointer-events-none
           "
         />
       )}
@@ -69,7 +98,6 @@ const PlanCard = ({
           <p className="text-4xl font-[var(--font-poppins)] font-bold text-[#2D2D2D]">
             {price}
           </p>
-          {/* <p className="text-xs text-gray-500 mt-1">USDT</p> */}
         </div>
 
         {/* Features */}
@@ -81,16 +109,11 @@ const PlanCard = ({
           <div className="space-y-3 text-sm text-gray-600 font-[var(--font-poppins)]">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center">
-                {/* Label */}
                 <span className="w-[55%] text-left whitespace-nowrap">
                   {feature.label}
                 </span>
-
-                {/* Colon */}
                 <span className="w-[5%] text-center">:</span>
-
-                {/* Value */}
-                <span className="w-[40%]   whitespace-nowrap">
+                <span className="w-[40%] whitespace-nowrap">
                   {feature.value}
                 </span>
               </div>
@@ -103,7 +126,7 @@ const PlanCard = ({
           onClick={() => {
             window.location.href = "https://site.growwincapital.com";
           }}
-          className="w-full py-4 rounded-full bg-[#51367e] text-white font-[var(--font-poppins)] font-medium hover:opacity-90 transition"
+          className="relative z-20 w-full py-4 rounded-full bg-[#51367e] text-white font-[var(--font-poppins)] font-medium hover:bg-[#432d69] transition shadow-md"
         >
           Invest Now
         </button>
