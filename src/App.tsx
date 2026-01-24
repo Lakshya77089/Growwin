@@ -5,6 +5,8 @@ import Subscription from "./pages/Subscription";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
+import Blog from "./pages/Blog";
+import DraggableSupport from "./components/common/DraggableSupport";
 
 function App() {
   return (
@@ -15,11 +17,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/subscription" element={<Subscription />} />
-          <Route path="/faq" element={<FAQ/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/about" element={<AboutUs/>} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
+      <DraggableSupport />
     </>
   );
 }

@@ -8,6 +8,7 @@ const navItems = [
   { label: "Subscription", path: "/subscription" },
   { label: "FAQ", path: "/faq" },
   { label: "Contact us", path: "/contact" },
+  { label: "Blog", path: "/blog" },
 ];
 
 const Navbar = () => {
