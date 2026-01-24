@@ -33,7 +33,7 @@ export const categories = [
     "Beginner Friendly",
     "Trust & Transparency",
     "Investment Tips",
-    "Market News",
+    // "Market News",
 ];
 
 export const allPosts: BlogPost[] = [

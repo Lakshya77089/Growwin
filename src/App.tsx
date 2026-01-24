@@ -9,11 +9,13 @@ import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import DraggableSupport from "./components/common/DraggableSupport";
 import ScrollToTop from "./components/common/ScrollToTop";
+import ScrollProgress from "./components/common/ScrollProgress";
 
 function App() {
   return (
     // <BrowserRouter>
     <>
+      <ScrollProgress />
       <ScrollToTop />
       <Navbar />
       <main >

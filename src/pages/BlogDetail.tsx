@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { allPosts, categories } from "../data/blogData";
 import type { SplitSectionContent } from "../data/blogData";
@@ -11,17 +11,6 @@ const BlogDetail = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const post = allPosts.find((p) => p.id === Number(id));
-    const [scrollProgress, setScrollProgress] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (window.scrollY / totalHeight) * 100;
-            setScrollProgress(progress);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     // Scroll to top on id change
     useEffect(() => {
@@ -72,11 +61,6 @@ const BlogDetail = () => {
                     }
                 }}
             />
-            {/* Reading Progress Bar */}
-            <div
-                className="fixed top-0 left-0 h-1.5 bg-[#51367E] z-[100] transition-all duration-100 ease-out"
-                style={{ width: `${scrollProgress}%` }}
-            />
 
             <section className="relative w-full pt-28 pb-10 overflow-hidden">
                 {/* Background Glows */}
@@ -117,12 +101,16 @@ const BlogDetail = () => {
                         </h1>
 
                         {/* Meta Info */}
-                        <div className="text-[15px] font-[var(--font-poppins)] text-gray-800 mb-10 flex flex-wrap items-center gap-y-2">
-                            <span className="font-bold mr-2">Published on :</span>{" "}
-                            <span className="text-blue-500">{post.date}</span>
-                            <span className="mx-4 hidden md:inline text-gray-300">|</span>
-                            <span className="font-bold mr-2">Author:</span>{" "}
-                            <span className="text-blue-500">{post.author}</span>
+                        <div className="text-[14px] md:text-[16px] font-[var(--font-poppins)] text-gray-800 mb-10 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                            <div className="flex items-center">
+                                <span className="font-bold text-[#51367E] mr-2">Published on :</span>
+                                <span className="text-blue-600 font-medium">{post.date}</span>
+                            </div>
+                            <span className="mx-6 hidden sm:inline text-gray-300">|</span>
+                            <div className="flex items-center">
+                                <span className="font-bold text-[#51367E] mr-2">Author:</span>
+                                <span className="text-blue-600 font-medium">{post.author}</span>
+                            </div>
                         </div>
 
                         {/* Lead Paragraph */}
