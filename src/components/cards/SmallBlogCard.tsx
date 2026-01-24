@@ -1,20 +1,30 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface SmallBlogCardProps {
+    id: number;
     title: string;
     date: string;
     excerpt: string;
     image: string;
+    category: string;
+    readTime: string;
 }
 
 const SmallBlogCard: React.FC<SmallBlogCardProps> = ({
+    id,
     title,
     date,
     excerpt,
     image,
+    category,
+    readTime,
 }) => {
+    const navigate = useNavigate();
     return (
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-10 border-b border-[#51367E20] group cursor-pointer hover:bg-[#51367E05] transition-colors px-0 md:px-4">
+        <div
+            onClick={() => navigate(`/blog/${id}`)}
+            className="flex flex-col md:flex-row md:items-center justify-between py-10 border-b border-[#51367E20] group cursor-pointer hover:bg-[#51367E05] transition-colors px-0 md:px-4"
+        >
             {/* Mobile Image (Top) */}
             <div className="w-full md:hidden mb-6">
                 <div className="rounded-[25px] overflow-hidden aspect-[2/1]">
@@ -36,6 +46,11 @@ const SmallBlogCard: React.FC<SmallBlogCardProps> = ({
             {/* Content - Center */}
             <div className="flex-grow md:w-[65%] md:px-10">
                 <div className="flex flex-col">
+                    <div className="flex items-center gap-2 mb-2">
+                        <span className="text-[11px] font-bold text-[#51367E] uppercase tracking-wider">{category}</span>
+                        <span className="text-[11px] text-gray-400">•</span>
+                        <span className="text-[11px] text-gray-500 font-medium">{readTime}</span>
+                    </div>
                     {/* Header Area (Title & Date) */}
                     <div className="flex justify-between items-baseline mb-3">
                         <h4 className="text-[20px] md:text-[24px] font-semibold text-[#2D2D2D] font-[var(--font-poppins)] group-hover:text-[#51367E] transition-colors leading-tight">

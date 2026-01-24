@@ -6,6 +6,7 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 import DraggableSupport from "./components/common/DraggableSupport";
 import ScrollToTop from "./components/common/ScrollToTop";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
         </Routes>
       </main>
       <DraggableSupport />
