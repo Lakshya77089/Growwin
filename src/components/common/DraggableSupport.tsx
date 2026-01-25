@@ -78,7 +78,7 @@ const DraggableSupport: React.FC = () => {
             }}
             className="cursor-move select-none"
         >
-            <button className={`bg-[#51367E] text-white px-6 py-4 shadow-[-5px_0_20px_rgba(81,54,126,0.3)] font-medium text-[15px] flex items-center justify-center border border-white/20 backdrop-blur-sm pointer-events-none whitespace-nowrap ${position.x === 0 ? 'rounded-r-3xl' : 'rounded-l-3xl'}`}>
+            <button className={`bg-[#51367E] text-white md:px-6 md:py-4 px-4 py-2.5 shadow-[-5px_0_20px_rgba(81,54,126,0.3)] font-medium md:text-[15px] text-[10px] flex items-center justify-center border border-white/20 backdrop-blur-sm pointer-events-none whitespace-nowrap ${position.x === 0 ? 'rounded-r-3xl' : 'rounded-l-3xl'}`}>
                 Customer Support
             </button>
         </div>

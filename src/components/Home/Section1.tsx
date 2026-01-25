@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroBg from "/fimage.png";
+import heroBg from "/fimage.webp";
 const handleDownload = () => {
   window.location.href = "https://apk.growwincapital.com/growwin.apk";
 };
