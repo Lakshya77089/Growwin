@@ -120,17 +120,20 @@ const Contact = () => {
                 </a>
 
                 {/* Office */}
-                <div className="flex flex-col items-center text-center gap-3">
-                  {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#51367e]/10 text-[#51367e]"> */}
-                  <img src={MapPin} alt="Token" className="w-10 h-10" />
-                  {/* </div> */}
-                  <p className="font-[var(--font-poppins)]  font-medium text-[#51367E]">
-                    Our Office
+                 <a
+                  href="mailto:support@growwincapital.com"
+                  className="flex flex-col items-center text-center gap-3 cursor-pointer group"
+                >
+                  <img src={Mail} alt="Email" className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
+
+                  <p className="font-[var(--font-poppins)] font-medium text-[#51367E]">
+                    Support
                   </p>
-                  <p className="text-sm font-[var(--font-poppins)]  font-regular text-[#808080]">
-                    Your full address
+
+                  <p className="text-sm text-[#808080] font-[var(--font-poppins)] font-regular transition-colors group-hover:text-[#51367E]">
+                    support@growwincapital.com
                   </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>

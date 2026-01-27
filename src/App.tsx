@@ -7,7 +7,6 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
-import DraggableSupport from "./components/common/DraggableSupport";
 import ScrollToTop from "./components/common/ScrollToTop";
 import ScrollProgress from "./components/common/ScrollProgress";
 
@@ -29,7 +28,7 @@ function App() {
           <Route path="/blog/:id" element={<BlogDetail />} />
         </Routes>
       </main>
-      <DraggableSupport />
+      {/* <DraggableSupport /> */}
     </>
   );
 }

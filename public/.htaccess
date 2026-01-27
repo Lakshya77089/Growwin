@@ -1,0 +1,38 @@
+# -------------------------------
+# Enable Rewrite Engine
+# -------------------------------
+RewriteEngine On
+
+# -------------------------------
+# Force HTTPS (extra safety)
+# -------------------------------
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# -------------------------------
+# SPA Routing (React / Angular / Vue)
+# Redirect all non-file requests to index.html
+# -------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# -------------------------------
+# Security Headers
+# -------------------------------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# -------------------------------
+# Disable Cache (if needed for fast updates)
+# Remove this block if you want caching
+# -------------------------------
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
